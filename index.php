@@ -5,17 +5,16 @@ $star = $_POST['istar'];
 $description = $_POST['idescription'];
 
 $dbHost = '';
-$dbUsername = '';
+$dbUsername = 'root';
 $dbPassword = '';
 $dbName = '';
 
 $conexao = new mysql($dbHost,$dbUsername,$dbPassword,$dbName);
 
-if ($conexao->connection_errno){
-    echo "Erro"
-}
-else {
-    echo "Conectado"
+if ($conexao->connect_errno){
+    echo "Erro";
+} else {
+    echo "Conectado";
 }
 
 ?>
