@@ -26,6 +26,27 @@ body{
 
 .main-header {
     width: 100vw;
+    height: 20vh;
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    /* gap: 3.5rem; */
+}
+
+.main-title {
+    width: 100vw;
     height: 10vh;
-    background-color: ;
+    font-size: 4vw;
+}
+
+.main-logo {
+    display: flex;
+    padding: 1rem;
+    width: 4vw;
+}
+
+.nav-bar{
+    width: 100vw;
+    height: 10vh;
+    background: wheat;
 }
