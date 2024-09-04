@@ -1,0 +1,31 @@
+:root {
+    /* Color Palette */
+    --color-primary: #5A0000;
+    --color-terciary: #662319;
+
+    /* Neutral Pallete */
+    --neutral-white: white;
+    --neutral-black: black;
+    --neutral-light-gray: lightgray;
+    --neutral-gray: gray;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(90deg, var(--color-primary) 0%, var(--neutral-black));
+    --gradient-primary: linear-gradient(90deg, var(var(--color-primary)) 0%, var(--neutral-black));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+}
+
+body{
+    background: var(--neutral-white);
+}
+
+.main-header {
+    width: 100vw;
+    height: 10vh;
+    background-color: ;
+}
