@@ -30,7 +30,7 @@
 }
 
 body{
-    background: var(--neutral-black);
+    background: var(--neutral-white);
 }
 
 .main-header {
@@ -79,9 +79,9 @@ body{
 }
 
 .navbar-list{
-    width: 100%;
+    width: 100%rem;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     gap: 5rem;    
 }
@@ -96,17 +96,15 @@ body{
 .navbar-link{
     border: 1px transparent solid;
     padding: .5rem 1rem .5rem 1rem;
-    border-radius: .5rem;
     text-decoration: none;
-    transition: all 1s;
 }
 
-.navbar-link:visited{
+.navbar-link:visited, .navbar-link:active, .navbar-link:link{
     color: var(--neutral-white);
 }
 
 .navbar-link:hover{
-    border: 1px var(--neutral-white) solid;
+    border: 1px var(--neutral-black) solid;
 }
 
 .list-icon {
@@ -120,9 +118,51 @@ body{
     justify-content: flex-start;
     gap: 1rem;
     background-color: var(--color-primary);
-    flex-direction: column;
 }
 
-/* .cascata-conteudo li{
-    display: none;
-}*/
+.cascata-conteudo {
+    display: none; 
+    flex-direction: column;
+    position: absolute; 
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.list-cascata:hover{
+    height: 14.5rem;
+    background-color: var(--color-primary);
+    cursor:pointer;
+    border: 1px var(--neutral-black) solid;
+
+    .navbar-link:hover{
+        border: 1px var(--neutral-black) transparent;
+    }
+    .cascata-conteudo{
+        display: flex; 
+    }
+    .list-icon i{
+        transform: rotate(180deg);
+        transition: transform 0.5s ease-in-out;
+    }
+}
+
+.list-icon i{
+    transition: transform 0.5s ease-in-out;
+}
+
+.cascata-conteudo:hover > .cascata-conteudo a{
+    border: 1px var(--neutral-black) solid;
+}
+
+.cascata-conteudo a{
+    color: var(--neutral-white);
+    text-decoration: none;
+    padding: 0.8rem;
+}
+
+.cascata-conteudo a:hover {
+    background-color: var(--neutral-white);
+    color: var(--neutral-black);
+    text-decoration: underline;
+    text-decoration-color: red;
+}
