@@ -12,10 +12,10 @@
     --color-terciary: #662319;
 
     /* Neutral Pallete */
-    --neutral-white: white;
-    --neutral-black: black;
-    --neutral-light-gray: lightgray;
-    --neutral-gray: gray;
+    --neutral-white: #FFFFFF;
+    --neutral-black: #000000;
+    --neutral-light-gray: #d3d3d3;
+    --neutral-gray: #808080;
 
     /* Gradients */
     --gradient-primary: linear-gradient(90deg, var(--color-primary) 0%, var(--neutral-black));
