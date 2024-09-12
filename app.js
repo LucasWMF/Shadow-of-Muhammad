@@ -24,6 +24,10 @@ app.get('/feedback', function(req, res) {
     res.sendFile(path.join(__dirname, 'pages', 'feedback.html'));
 });
 
+app.get('/painel', function(req, res) {
+    res.sendFile(path.join(__dirname, 'pages', 'panel.php'));
+});
+
 app.listen(8081, function() {
     console.log('Servidor conectado na porta 8081');
 });

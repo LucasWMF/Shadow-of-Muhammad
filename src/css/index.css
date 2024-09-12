@@ -1,11 +1,12 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Variáveis CSS */
 :root {
     /* Fonts Palette */
     --font-primary: 'Jura';
-    --font-secondary: '';
+    --font-developers: 'Anonymous Pro';
 
     /* Color Palette */
     --color-primary: #5A0000;
@@ -20,6 +21,10 @@
     /* Gradients */
     --gradient-primary: linear-gradient(90deg, var(--color-primary) 0%, var(--neutral-black));
     --gradient-primary: linear-gradient(90deg, var(var(--color-primary)) 0%, var(--neutral-black));
+    --gradient-developers: linear-gradient(90deg, #ED522B,50% #FFE669 0%, #20A758);
+
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+    --option-bg: white;
 }
 
 * {
@@ -35,6 +40,7 @@ body{
     grid-template-areas: "header"
                          "main"
                          "footer";
+    gap: 1rem;
 }
 
 .main-header {
@@ -67,11 +73,10 @@ body{
 }
 
 .main-img-logo {
-    width: 5vw;
-    height: 10vh;
+    width: max(5vw, 1vw);
     padding: 0.5rem;
     display: flex;
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
 }
 
 .navbar{
@@ -84,7 +89,7 @@ body{
 }
 
 .navbar-list{
-    width: 100%rem;
+    width: 100%;
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -134,7 +139,7 @@ body{
 }
 
 .list-cascata:hover{
-    height: 14.5rem;
+    height: 17.5rem;
     background-color: var(--color-primary);
     cursor:pointer;
     border: 1px var(--neutral-black) solid;
@@ -171,3 +176,165 @@ body{
     text-decoration: underline;
     text-decoration-color: red;
 }
+
+.navbar {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    color: var(--neutral-white);
+}
+
+.navbar-list {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 5rem;    
+}
+
+.navbar li {
+    list-style: none;
+    font-size: 1.5rem;
+    justify-content: start;
+    align-items: start;
+}
+
+.navbar-link {
+    border: 1px transparent solid;
+    padding: .5rem 1rem .5rem 1rem;
+    text-decoration: none;
+}
+
+.navbar-link:visited, .navbar-link:active, .navbar-link:link {
+    color: var(--neutral-white);
+}
+
+.navbar-link:hover {
+    border: 1px var(--neutral-black) solid;
+}
+
+.list-icon {
+    display: flex;
+    gap: 1rem;
+    color: var(--neutral-white);
+}
+
+.list-cascata {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    background-color: var(--color-primary);
+}
+
+.cascata-conteudo {
+    display: none; 
+    flex-direction: column;
+    position: absolute; 
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.list-cascata:hover {
+    height: 17.5rem;
+    background-color: var(--color-primary);
+    cursor: pointer;
+    border: 1px var(--neutral-black) solid;
+}
+
+.list-cascata:hover .navbar-link {
+    border: 1px var(--neutral-black) transparent;
+}
+
+.list-cascata:hover .cascata-conteudo {
+    display: flex; 
+}
+
+.list-cascata:hover .list-icon i {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.list-icon i {
+    transition: transform 0.5s ease-in-out;
+}
+
+.cascata-conteudo a {
+    color: var(--neutral-white);
+    text-decoration: none;
+    padding: 0.8rem;
+}
+
+.cascata-conteudo a:hover {
+    background-color: var(--neutral-white);
+    color: var(--neutral-black);
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.list-item-select select{
+    position: relative;
+    appearance: none;
+    background: transparent;
+    border: none;
+    color: var(--neutral-white);
+    list-style: none;
+    font-size: 1.5rem;
+    border: 1px transparent solid;
+    padding: .5rem 1rem .5rem 1rem;
+}
+
+.list-item-select:hover{
+    position: relative;
+    /* height: 9rem; */
+    background-color: var(--color-primary);
+    cursor: pointer;
+    border: 1px var(--neutral-black) solid;
+}
+
+.list-item-select option:hover > .list-item-select:hover{
+    height: 17.5rem;
+    background-color: var(--color-primary);
+    cursor: pointer;
+    border: 1px var(--neutral-black) solid;
+}
+
+.list-item-select option{
+    gap: 1rem;
+    background: var(--color-primary);
+    border-radius: 0px;
+    border: transparent;
+}
+
+/* Section */
+
+.section-container{
+    grid-area: 'main';
+    padding: 2rem;
+    font-family: var(--font-primary);
+}
+
+.main-footer{
+    grid-area: 'footer';
+}
+
+/* Panel Styles */
+
+/* .painel-header{
+    background-color: none;
+}
+
+.painel-developers img{
+    width: 10%;
+}
+
+.painel-developers p{
+    font-family: var(--font-developers);
+    font-size: 36px;
+    font-weight: bold; 
+    background: var(--gradient-developers); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+

@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Shadow of Muhammad</title>
-    <link rel="icon" href="/src/image/logo.png">
-    <link rel="stylesheet" href="/src/css/index.css">
+    <!-- <link rel="icon" href="/src/image/logo.png"> -->
+    <link rel="icon" href="image/logo.png">
+    <!-- <link rel="stylesheet" href="/src/css/index.css"> -->
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <header class="main-header">
         <div class="main-title">
-            <img src="/src/image/logo.png" alt="" class="main-img-logo">
+            <img src="/image/logo.png" alt="" class="main-img-logo">
+            <!-- <img src="/src/image/logo.png" alt="" class="main-img-logo"> -->
             <h1 class="main-h1-title">Shadow of Muhammad</h1>
         </div>
         <nav class="navbar">
@@ -27,10 +30,18 @@
                         <a href="/historia">História</a>
                         <a href="/modalidades">Modalidade</a>
                         <a href="/ranking">Ranking</a>
+                        <a href="/ranking">Olímpiadas</a>
                     </div>
                 </li>
                 <li class="list-item">
                     <a class="navbar-link" href="/feedback">Feedback</a>
+                </li>
+                <li class="list-item-select">
+                    <select onchange="contentLanguage(this.value)">
+                        <option value="ptBR">PT-BR</option>
+                        <option value="en">EN</option>
+                        <option value="fr">FR</option>
+                    </select>
                 </li>
             </ul>
         </nav>
@@ -45,9 +56,8 @@
         <div class="section-container">
             <section class="section-main">
                 <header class="section-header">
-                    <h1 class="h1-introduction"></h1>
+                    <h1 class="h1-introduction">Introdução</h1>
                 </header>
-
                 <div class="section-content">
                     <p class="p-introduction"></p>
                 </div>
