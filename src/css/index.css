@@ -283,6 +283,9 @@ body{
     font-size: 1.5rem;
     border: 1px transparent solid;
     padding: .5rem 1rem .5rem 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .list-item-select:hover{
@@ -294,7 +297,7 @@ body{
 }
 
 .list-item-select option:hover > .list-item-select:hover{
-    height: 17.5rem;
+    height: 100%;
     background-color: var(--color-primary);
     cursor: pointer;
     border: 1px var(--neutral-black) solid;
@@ -305,6 +308,30 @@ body{
     background: var(--color-primary);
     border-radius: 0px;
     border: transparent;
+}
+
+.list-item-select option:first-child{
+    text-align: center;
+    background: var(--neutral-white);
+    text-decoration: underline;
+    color: black;
+    text-decoration-color: red;
+}
+
+list-item-select option.select{
+    text-align: center;
+    background: var(--neutral-white);
+    text-decoration: underline;
+    color: black;
+    text-decoration-color: red;
+}
+
+.list-item-select option:not(:first-child){
+    padding: 0.8rem;
+}
+
+.option-i {
+    order: 2;
 }
 
 /* Section */
