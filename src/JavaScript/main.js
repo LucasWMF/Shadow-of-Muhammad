@@ -24,9 +24,9 @@ let contentLanguages = {
     },
 
     title: {
-        'Português': ['Introdução', 'História do Boxe e Federação', 'Modalidades e Regras', 'Melhores Competidores', 'Curiosidades e Benefícios', 'Feedback'],
-        'English': ['Introduction', 'History of Boxing and Federation', 'Modalities and Rules', 'Best Competitors', 'Curiosities and Benefits', 'Feedback'],
-        'Français': ['Introduction', 'Histoire de la boxe et de la fédération', 'Modalités et règles', 'Meilleurs compétiteurs', 'Curiosités et avantages', 'Retours']
+        'Português': ['Introdução Boxe Olímpico', 'História do Boxe e Federação', 'Modalidades e Regras', 'Melhores Competidores', 'Curiosidades e Benefícios', 'Feedback'],
+        'English': ['Olympic Boxing Introduction', 'History of Boxing and Federation', 'Modalities and Rules', 'Best Competitors', 'Curiosities and Benefits', 'Feedback'],
+        'Français': ['Introduction Boxe Olympique', 'Histoire de la boxe et de la fédération', 'Modalités et règles', 'Meilleurs compétiteurs', 'Curiosités et avantages', 'Retours']
     },
     
     textSummary: {
@@ -64,6 +64,28 @@ let contentLanguages = {
     },
 }
 
+function contentLanguages(language){
+    return language
+}
+
+function textLanguages(){
+    let language = contentLanguages()
+    if (language == null){
+        language == 'Português'
+    }
+
+    const titleIntroduction = document.getElementsByClassName(h1-introduction)
+    const textIntroduction = document.getElementsByClassName(p-introduction)
+    
+    titleIntroduction.innerHHTML = 
+    `<h1>${contentLanguages['title'][language][1]}</h1>
+        <p>
+        ${contentLanguages[['textSummary'][['title'][language][1]][1]]}
+        </p>
+    `
+}
+textLanguages()
+
 // document.addEventListener('DOMContentLoaded', () => {
 //     const languageSelect = document.getElementById('list-item-select');
 
@@ -90,23 +112,3 @@ let contentLanguages = {
 //         applyLanguage(selectedLanguage); // Aplica a linguagem selecionada
 //     });
 // });
-
-document.addEventListener('DOMContentLoaded', function() {
-    const selectElement = document.querySelector('select');
-
-    // Função para abrir o menu
-    function openSelect() {
-        selectElement.focus();
-        // Simula a abertura do menu dropdown
-        selectElement.size = selectElement.options.length;
-    }
-
-    // Função para fechar o menu
-    function closeSelect() {
-        selectElement.size = 1;
-    }
-
-    // Adiciona os ouvintes de evento
-    selectElement.addEventListener('mouseover', openSelect);
-    selectElement.addEventListener('mouseout', closeSelect);
-});

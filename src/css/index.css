@@ -22,9 +22,6 @@
     --gradient-primary: linear-gradient(90deg, var(--color-primary) 0%, var(--neutral-black));
     --gradient-primary: linear-gradient(90deg, var(var(--color-primary)) 0%, var(--neutral-black));
     --gradient-developers: linear-gradient(90deg, #ED522B,50% #FFE669 0%, #20A758);
-
-    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
-    --option-bg: white;
 }
 
 * {
@@ -274,7 +271,8 @@ body{
 }
 
 .list-item-select select{
-    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     background: transparent;
     border: none;
@@ -283,18 +281,17 @@ body{
     font-size: 1.5rem;
     border: 1px transparent solid;
     padding: .5rem 1rem .5rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.list-item-select select:focus {
+    outline: none;
+    overflow: hidden;
 }
 
 .list-item-select:hover{
-    position: relative;
     /* height: 9rem; */
-    background-color: var(--color-primary);
-    cursor: pointer;
-    border: 1px var(--neutral-black) solid;
-}
-
-.list-item-select option:hover > .list-item-select:hover{
-    height: 17.5rem;
     background-color: var(--color-primary);
     cursor: pointer;
     border: 1px var(--neutral-black) solid;
@@ -302,9 +299,19 @@ body{
 
 .list-item-select option{
     gap: 1rem;
-    background: var(--color-primary);
-    border-radius: 0px;
-    border: transparent;
+    background: transparent;
+    border: none;
+}
+
+.list-item-select option:active {
+    background-color: cyan;
+}
+
+.list-item-select option:hover{
+    background: var(--neutral-white);
+    color: var(--neutral-black);
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 /* Section */
