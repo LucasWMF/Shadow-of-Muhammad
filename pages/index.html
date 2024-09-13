@@ -37,10 +37,20 @@
                     <a class="navbar-link" href="/feedback">Feedback</a>
                 </li>
                 <li class="list-item-select">
+                    <!-- <i class="fa-solid fa-chevron-down option-i"></i> -->
                     <select onchange="contentLanguage(this.value)">
-                        <option value="Português">PT-BR</option>
-                        <option value="English">EN</option>
-                        <option value="Français">FR</option>
+                        <!-- <option value="ptBR">PT-BR</option> -->
+                        <!-- <option value="en">EN</option> -->
+                        <!-- <option value="fr">FR</option> -->
+                        <option value="ptBR">1</option>
+                        <option value="en">2</option>
+                        <option value="fr">3</option>
+
+                        <script>
+                            $(document).ready(function() {
+                                $('.list-item-select').niceSelect();
+                            });
+                        </script>
                     </select>
                 </li>
             </ul>

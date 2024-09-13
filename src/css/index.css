@@ -71,6 +71,7 @@ body{
 
 .main-img-logo {
     width: max(5vw, 1vw);
+    height: max(5vw, 1vw);
     padding: 0.5rem;
     display: flex;
     /* aspect-ratio: 1/1; */
@@ -288,10 +289,20 @@ body{
 .list-item-select select:focus {
     outline: none;
     overflow: hidden;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .list-item-select:hover{
     /* height: 9rem; */
+    background-color: var(--color-primary);
+    cursor: pointer;
+    border: 1px var(--neutral-black) solid;
+}
+
+.list-item-select option:hover > .list-item-select:hover{
+    height: 100%;
     background-color: var(--color-primary);
     cursor: pointer;
     border: 1px var(--neutral-black) solid;
@@ -312,6 +323,30 @@ body{
     color: var(--neutral-black);
     text-decoration: underline;
     text-decoration-color: red;
+}
+
+.list-item-select option:first-child{
+    text-align: center;
+    background: var(--neutral-white);
+    text-decoration: underline;
+    color: black;
+    text-decoration-color: red;
+}
+
+list-item-select option.select{
+    text-align: center;
+    background: var(--neutral-white);
+    text-decoration: underline;
+    color: black;
+    text-decoration-color: red;
+}
+
+.list-item-select option:not(:first-child){
+    padding: 0.8rem;
+}
+
+.option-i {
+    order: 2;
 }
 
 /* Section */
