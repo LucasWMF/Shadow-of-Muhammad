@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shadow of Muhammad</title>
     <!-- <link rel="icon" href="/src/image/logo.png"> -->
     <link rel="icon" href="image/logo.png">
@@ -13,65 +13,89 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="main-title">
-            <img src="/image/logo.png" alt="" class="main-img-logo">
-            <!-- <img src="/src/image/logo.png" alt="" class="main-img-logo"> -->
-            <h1 class="main-h1-title">Shadow of Muhammad</h1>
-        </div>
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="list-item">
-                    <a class="navbar-link" href="/">Home</a>
-                </li>
-                <li class="list-item list-cascata">
-                    <a class="navbar-link list-icon">Conteúdos <i class="fa-solid fa-chevron-down"></i></a>
-                    <div class="cascata-conteudo">
-                        <a href="/historia">História</a>
-                        <a href="/modalidades">Modalidade</a>
-                        <a href="/ranking">Ranking</a>
-                        <a href="/ranking">Olímpiadas</a>
+    <div class="container">
+        <header class="main-header">
+            <div class="main-title">
+                <img src="image/logo.png" alt="" class="main-img-logo">
+                <!-- <img src="/src/image/logo.png" alt="" class="main-img-logo"> -->
+                <h1 class="main-h1-title">Shadow of Muhammad</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="list-item">
+                        <a class="navbar-link" href="/">Home</a>
+                    </li>
+                    <li class="list-item list-cascata">
+                        <a class="navbar-link list-icon">Conteúdos <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="cascata-conteudo">
+                            <a href="/historia">História</a>
+                            <a href="/modalidades">Modalidade</a>
+                            <a href="/ranking">Ranking</a>
+                            <a href="/ranking">Olímpiadas</a>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <a class="navbar-link" href="/feedback">Feedback</a>
+                    </li>
+                    <li class="list-item-select">
+                        <!-- <i class="fa-solid fa-chevron-down option-i"></i> -->
+                        <select onchange="contentLanguage(this.value)">
+                            <option value="ptBR">PT-BR</option>
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="nav-bar-cel">
+
+            </nav>
+        </header>
+
+        <main class="main-container">
+
+            <div class="section-container">
+
+                <section class="section-main">
+                    <header class="section-header">
+                        <h1 class="h1-introduction">Introdução</h1>
+                    </header>
+                    <div class="section-content">
+                        <p class="p-introduction">O boxe olímpico é uma modalidade de combate que faz parte dos Jogos
+                            Olímpicos desde 1904 para homens e 2012 para mulheres. As lutas ocorrem em três rounds e os
+                            atletas utilizam luvas, capacete e protetor bucal. A vitória pode ser por nocaute, decisão
+                            dos juízes ou interrupção médica. As categorias são divididas por peso, e o foco é na
+                            técnica, rapidez e precisão dos golpes. O esporte promove fair play e possui regras
+                            rigorosas para a segurança dos lutadores.</p>
                     </div>
-                </li>
-                <li class="list-item">
-                    <a class="navbar-link" href="/feedback">Feedback</a>
-                </li>
-                <li class="list-item-select">
-                    <!-- <i class="fa-solid fa-chevron-down option-i"></i> -->
-                    <select onchange="contentLanguage(this.value)">
-                        <!-- <option value="ptBR">PT-BR</option> -->
-                        <!-- <option value="en">EN</option> -->
-                        <!-- <option value="fr">FR</option> -->
-                        <option value="ptBR">1</option>
-                        <option value="en">2</option>
-                        <option value="fr">3</option>
+                </section>
 
-                        <script>
-                            $(document).ready(function() {
-                                $('.list-item-select').niceSelect();
-                            });
-                        </script>
-                    </select>
-                </li>
-            </ul>
-        </nav>
+                <section class="section-main">
+                    <header class="section-header">
+                        <h1 class=""></h1>
+                    </header>
 
-        <nav class="nav-bar-cel">
+                    <div class="section-content">
+                        <p class=""></p>
+                    </div>
 
-        </nav>
-    </header>
+                    <div class="button-more">
+                        <a href="/historia">Ver Mais</a>
+                    </div>
+                </section>
 
-    <main class="main-container">
+                <section class="section-main">
+                    <header class="section-header">
+                        <h1 class=""></h1>
+                    </header>
 
-        <div class="section-container">
-
-            <section class="section-main">
-                <header class="section-header">
-                    <h1 class="h1-introduction">Introdução</h1>
-                </header>
-                <div class="section-content">
-                    <p class="p-introduction"></p>
-                </div>
+                    <div class="section-content">
+                        <p class=""></p>
+                    </div>
+                    <div class="button-more">
+                    <a href="/historia">Ver Mais</a>
+                    </div>
             </section>
 
             <section class="section-main">
@@ -82,43 +106,58 @@
                 <div class="section-content">
                     <p class=""></p>
                 </div>
-            </section>
-
-            <section class="section-main">
-                <header class="section-header">
-                    <h1 class=""></h1>
-                </header>
-
-                <div class="section-content">
-                    <p class=""></p>
+                <div class="button-more">
+                    <a href="/historia">Ver Mais</a>
                 </div>
             </section>
 
-            <section class="section-main">
-                <header class="section-header">
-                    <h1 class=""></h1>
-                </header>
-
-                <div class="section-content">
-                    <p class=""></p>
-                </div>
-            </section>
-
+    </div>
+    <div class="line"></div>
+    <div class="image-contain">
+        <div class="image-olimpic">
+            <img src="image/olimpic.png" alt="">
         </div>
-        <div class="line"></div>
-        <div class="image-contain">
-            <div class="image-olimpic">
-                <img src="/image/olimpic" alt="">
+        <div class="image-content">
+            <div class="image">
+                <img src="" alt="">
             </div>
-            <div class="image-content">
-
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="image">
+                <img src="" alt="">
             </div>
         </div>
+    </div>
     </main>
 
     <footer class="main-footer"></footer>
 
-    <script src="/JavaScript/main.js"></script>
+    </div>
 </body>
 
 </html>
+
+<script src="/JavaScript/main.js"></script>
+<script src="/JavaScript/language.js"></script>
