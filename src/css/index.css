@@ -18,10 +18,12 @@
     --neutral-black: #000000;
     --neutral-light-gray: #d3d3d3;
     --neutral-gray: #808080;
-
+    
     /* Gradients */
     --gradient-h-primary: linear-gradient(90deg, var(--neutral-black) 0%, var(--color-quaternay));
+    --gradient-h-secondary: linear-gradient(90deg, var(--color-quaternay) 0%, var(--neutral-black));
     --gradient-v-primary: linear-gradient(to bottom, var(--neutral-black), var(--color-quaternay));
+    --gradient-v-terciary: linear-gradient(to bottom, #9F0000, var(--neutral-black));
     --gradient-developers: linear-gradient(90deg, #ED522B, 50% #FFE669 0%, #20A758);
 }
 
@@ -471,6 +473,41 @@ body {
 .main-footer.header-title{
     border-bottom: 1px solid transparent;
     border-image: var(--gradient-v-primary) 1;
+}
+
+.text2{
+    width: calc(100%);
+}
+
+.
+
+.social-container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: calc(100%/7);
+}
+
+.social-button{
+    background: var(--gradient-v-terciary);
+    width: 2.5rem;
+    height: 2.5rem;
+    /* padding: 1rem 1rem 1rem 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    gap: 10rem;
+    color: var(--neutral-white);
+    text-decoration: none;
+}
+
+.social-button:hover{
+    .social-button i{
+        color: var(--color-quaternay);
+    }
 }
 
 .social-button i{
