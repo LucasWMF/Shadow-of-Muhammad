@@ -84,7 +84,7 @@ body {
 .main-title {
     display: flex;
     padding: 0.5;
-    height: 10vh;
+    height: auto    ;
     font-size: 4vw;
     gap: 1rem;
     margin-top: 1rem;
@@ -243,8 +243,7 @@ body {
 }
 
 .list-cascata:hover {
-    height: 23.8rem;
-    /* height: 17.5rem; */
+    height: 500%;
     background-color: var(--color-primary);
     cursor: pointer;
     border: 1px var(--neutral-black) solid;
