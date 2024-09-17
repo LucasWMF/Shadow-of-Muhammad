@@ -1,7 +1,8 @@
 // Dados de conteúdo para diferentes idiomas
 const contentLanguages = {
     Português: {
-        navbar: ['Home', 'Conteúdos <i class="fa-solid fa-chevron-down"></i>', 'História', 'Modalidades', 'Ranking', 'Feedback'],
+        navbar: ['Home', 'Conteúdos <i class="fa-solid fa-chevron-down"></i>', 'Feedback'],
+        dropnavbar: ['História', 'Modalidades', 'Ranking'],
         title: ['Introdução Boxe Olímpico', 'História do Boxe e Federação', 'Modalidades e Regras', 'Melhores Competidores', 'Curiosidades e Benefícios', 'Feedback'],
         textSummary: {
             'Introdução': ['O boxe olímpico é uma modalidade de combate que faz parte dos Jogos Olímpicos desde 1904 para homens e 2012 para mulheres. As lutas ocorrem em três rounds e os atletas utilizam luvas, capacete e protetor bucal. A vitória pode ser por nocaute, decisão dos juízes ou interrupção médica. As categorias são divididas por peso, e o foco é na técnica, rapidez e precisão dos golpes. O esporte promove fair play e possui regras rigorosas para a segurança dos lutadores.'],
@@ -10,10 +11,11 @@ const contentLanguages = {
             'Melhores Competidores': ['Texto sobre melhores competidores em Português'],
             'Curiosidades e Benefícios': ['Texto sobre curiosidades e benefícios em Português']
         },
-        buttonMore: 'Ver Mais' // Texto do botão "Ver Mais"
+        buttonMore: 'Ver Mais'
     },
     English: {
-        navbar: ['Home', 'Contents <i class="fa-solid fa-chevron-down"></i>', 'History', 'Formats', 'Ranking', 'Feedback'],
+        navbar: ['Home', 'Contents <i class="fa-solid fa-chevron-down"></i>', 'Feedback'],
+        dropnavbar: ['History', 'Formats', 'Ranking'],
         title: ['Olympic Boxing Introduction', 'History of Boxing and Federation', 'Modalities and Rules', 'Best Competitors', 'Curiosities and Benefits', 'Feedback'],
         textSummary: {
             'Introdução': ['Introduction text in English'],
@@ -22,10 +24,11 @@ const contentLanguages = {
             'Melhores Competidores': ['Text about best competitors in English'],
             'Curiosities and Benefits': ['Text about curiosities and benefits in English']
         },
-        buttonMore: 'Read More' // Texto do botão "Read More"
+        buttonMore: 'Read More'
     },
     Français: {
-        navbar: ['Accueil', 'Contenus <i class="fa-solid fa-chevron-down"></i>', 'Histoire', 'Formats', 'Classement', 'Retour'],
+        navbar: ['Accueil', 'Contenus <i class="fa-solid fa-chevron-down"></i>', 'Retour'],
+        dropnavbar: ['Histoire', 'Formats', 'Classement'],
         title: ['Introduction Boxe Olympique', 'Histoire de la boxe et de la fédération', 'Modalités et règles', 'Meilleurs compétiteurs', 'Curiosités et avantages', 'Retours'],
         textSummary: {
             'Introdução': ['Texte d\'introduction en Français'],
@@ -34,7 +37,7 @@ const contentLanguages = {
             'Melhores Competidores': ['Texte sur les meilleurs compétiteurs en Français'],
             'Curiosities and Benefits': ['Texte sur les curiosités et avantages en Français']
         },
-        buttonMore: 'Voir Plus' // Texto do botão "Voir Plus"
+        buttonMore: 'Voir Plus'
     }
 }
 
@@ -57,6 +60,15 @@ function contentLanguage(language) {
     for (let i = 0; i < navbarLinks.length; i++) {
         if (navbarLinks[i]) {
             navbarLinks[i].innerHTML = navbarItems[i] || '';
+        }
+    }
+
+    const dropmenuLinks = document.querySelector('.cascata-conteudo');
+    const driomenuItems = contentLanguage[language].dropnavbar
+
+    for (let i = 0; i < dropmenuLinks.length; i++) {
+        if (dropmenuLinks[i]) {
+            dropmenuLinks[i].innerHTML = driomenuItems[i] || '';
         }
     }
 
