@@ -523,17 +523,34 @@ body {
     padding: 1rem;
 }
 
-.text1{
-    width: 100%;    
+.title-footer {
+    font-family: var(--font-primary);
+    font-weight: 800;
+    align-self: baseline;
+}
+
+.title-footer h1 {
+    font-size: 6em;
+}
+
+.text1,
+.text2,
+.text3{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
     padding: 1rem;
 }
 
 .text2{
-    width: 100%;
+    width: 50%;
     padding: 1rem;
+    gap: 1rem;
 }
 
 .text3{
+    width: 100%;
     padding: 1rem;
 }
 
@@ -558,11 +575,11 @@ body {
 
 .social-container{
     display: flex;
-    justify-items: center;
-    align-items: center;
+    justify-items: flex-start;
+    align-items: flex-start;
     gap: 1rem;
     flex-wrap: wrap;
-    width: calc(100%);
+    width: 60%;
 }
 
 .social-button{
@@ -579,7 +596,7 @@ body {
     text-decoration: none;
 }
 
-.social-button:hover{
+.social-button a:hover{
     .social-button i{
         color: var(--color-quaternay);
     }
