@@ -4,7 +4,7 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon src/JavaScript/app.js",
+    "start": "node src/JavaScript/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
