@@ -1,35 +1,257 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadow of Muhammad</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="main-header">
+            <div class="main-title">
+                <img src="image/logo.png" alt="" class="main-img-logo">
+                <!-- <img src="/src/image/logo.png" alt="" class="main-img-logo"> -->
+                <h1 class="main-h1-title">Shadow of Muhammad</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="list-item">
+                        <a class="navbar-link" href="/">Home</a>
+                    </li>
+                    <li class="list-item list-cascata">
+                        <a class="navbar-link list-icon">Conteúdos <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="cascata-conteudo">
+                            <a href="historia">História</a>
+                            <a href="modalidades.html">Modalidades</a>
+                            <a href="/olympics">Olímpiadas</a>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <a class="navbar-link" href="/feedback">Feedback</a>
+                    </li>
+                    <li class="list-item-select">
+                        <!-- <i class="fa-solid fa-chevron-down option-i"></i> -->
+                        <select onchange="contentLanguage(this.value)">
+                            <option value="Português">PT-BR</option>
+                            <option value="English">EN</option>
+                            <option value="Français">FR</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="nav-bar-cel">
+            </nav>
+
+
 </head>
 <body>
-    <form action="./index.php">
-        
-        <div class="input-box">
-            <label for="iname">Nome</label>
-            <input id="iname" type="text">
-        </div>
+    <div class="container2">
+        <h2>AVALIE SUA EXPERIÊNCIA</h2>
+        <h3>Valorizamos muito o seu feedback! <br> Reserve um momento para avaliar sua <br> experiência e nos fornecer seus valiosos <br> comentários</h3>
 
-        <div class="input-box">
-        <label for="">Avaliação</label>
-        <radio class="star1"></radio>
-        <radio class="star2"></radio>
-        <radio class="star3"></radio>
-        <radio class="star4"></radio>
-        <radio class="star5"></radio>
+
+
+        <form action="#">
+            <div class="forms">
+                <input type="text" id="nome" name="nome" placeholder="Digite seu Nome:" required>
+            </div>
+            <div class="forms">
+                <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+            </div>        
+            <div class="estrelas">
+                <span class="estrela" data-rating="1">★</span>
+                <span class="estrela" data-rating="2">★</span>
+                <span class="estrela" data-rating="3">★</span>
+                <span class="estrela" data-rating="4">★</span>
+                <span class="estrela" data-rating="5">★</span>
+            </div>
+            <div class="forms">
+                <textarea type="text" id="mensagem" name="mensagem" placeholder="Conte-nos sobre a sua experiência!" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer class="main-footer">
+        <div class="left">
+            <div class="footer-logo">
+                <img class="logo" src="/image/logo.png" alt="">
+            </div>
         </div>
+        <div class="right">
+            <header class="footer-title">
+                <h1>SHADOW OF MUHAMMAD</h1>
+            </header>
+                
+                <div class="text-container">
+                    <div class="text1">
+                        <h1 class="title-footer">SOBRE O SITE</h1>
+                        <p>Nossa escola online ensina as regras e modalidades do boxe olímpico, oferecendo
+                            conhecimento e treino para iniciantes e entusiastas.</p>
+                    </div>
+                    <div class="text2">
+                        <h1 class="title-footer">REDES SOCIAIS</h1>
+
+                        <div class="social-container">
+                            <a href="" class="social-button">
+                                <i class="bi bi-telephone"></i>
+                            </a>
+
+                            <a href="" class="social-button">
+                                <i class="fa-light fa-at"></i>
+                            </a>
+
+                            <a href="" class="social-button">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+
+                            <a href="" class="social-button">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="" class="social-button">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="" class="social-button">
+                                <i class="fa-solid fa-map"></i>
+                                <a>
+                        </div>
+                    </div>
+                    <div class="text3">
+                        <h1 class="title-footer">ABAS</h1>
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">HISTÓRIA</a></li>
+                            <li><a href="">MODALIDADES</a></li>
+                            <li><a href="">OLÍMPIADAS</a></li>
+                            <li><a href="">FEEDBACK</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <!-- <div class="text-copy ">
+            <p>Copyright (c) 2024 Shadow Of Muhammad Todos os direitos reservados Este produto é protegido por
+                direitos autorais e distribuído sob licenças que restringem cópia, distribuição e descompilação.</p>
+        </div> -->
+    </footer>
+
+</div>
+    <style>
+
+        .container2 {
+            background-color: #870000;
+            padding: 30px;
+            border-radius: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #fff; 
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: "Jura", sans-serif;
+            font-style: normal;
+        }
+        h3 {
+            color: #fff; 
+            margin-bottom: 20px;
+            text-align: justify;
+            font-family: "Jura", sans-serif;
+            font-style: normal;
+        }
+        ::placeholder {
+            color: black; 
+            margin-bottom: 20px;
+            text-align: justify;
+            font-family: "Jura", sans-serif;
+        }
+
+        .forms {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #fff; 
+        }
+
+        textarea {
+            width: 100%;
+            padding: 20px;
+            font-size: 20px;
+            border: 1px solid white; 
+            border-radius: 10px;
+            resize: vertical;
+            min-height: 150px;
+            background-color: white; 
+            color: black; 
+            margin-bottom: 20px;
+            text-align: justify;
+            font-family: "Jura", sans-serif;
+
+        }
+
+        button {
+            background-color: #F7D160;
+            color: #870000; 
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #f4f4f4; 
+            color: #870000; 
+        }
+
+        .estrelas {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .estrela {
+            font-size: 50px;
+            color: #ddd;
+            cursor: pointer;
+        }
+
+        .estrela.ativa {
+            color: #ffc107;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid #fff; 
+            border-radius: 50px;
+            color: black; 
+            background-color: white; 
+        }
+    </style>
     
-        <label for="itext">Texto</label>
-        <input id="itext" type="text">
-        </div>
-        
-        <input class="submit" type="submit">
-    </form>
+    <script>
+        const estrelas = document.querySelectorAll('.estrela');
+        estrelas.forEach(estrela => {
+            estrela.addEventListener('click', () => {
+                const rating = estrela.dataset.rating;
+                estrelas.forEach(est => {
+                    est.classList.remove('ativa');
+                    if (est.dataset.rating <= rating) {
+                        est.classList.add('ativa');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
