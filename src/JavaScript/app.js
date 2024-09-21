@@ -19,15 +19,15 @@ app.get('/', function(req, res) {
 });
 
 app.get('/historia', function(req, res) {
-    res.sendFile(path.join(__dirname, '../../views', 'historia.html'));
+    res.sendFile(path.join(__dirname, '../../views', 'history.html'));
 });
 
 app.get('/modalidades', function(req, res) {
-    res.sendFile(path.join(__dirname, '../../views', 'modalidades.html'));
+    res.sendFile(path.join(__dirname, '../../views', 'modalities.html'));
 });
 
-app.get('/ranking', function(req, res) {
-    res.sendFile(path.join(__dirname, '../../views', 'ranking.html'));
+app.get('/olimpiadas', function(req, res) {
+    res.sendFile(path.join(__dirname, '../../views', 'olympics.html'));
 });
 
 app.get('/feedback', function(req, res) {

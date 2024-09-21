@@ -2,7 +2,7 @@
 const contentLanguages = {
     Português: {
         navbar: ['Home', 'Conteúdos <i class="fa-solid fa-chevron-down"></i>', 'Feedback'],
-        dropnavbar: ['História', 'Modalidades', 'Ranking'],
+        dropnavbar: ['História', 'Modalidades', 'Olímpiadas'],
         title: ['Introdução Boxe Olímpico', 'História do Boxe e Federação', 'Modalidades e Regras', 'Melhores Competidores', 'Curiosidades e Benefícios', 'Feedback'],
         textSummary: {
             'Introdução': ['O boxe olímpico é uma modalidade de combate que faz parte dos Jogos Olímpicos desde 1904 para homens e 2012 para mulheres. As lutas ocorrem em três rounds e os atletas utilizam luvas, capacete e protetor bucal. A vitória pode ser por nocaute, decisão dos juízes ou interrupção médica. As categorias são divididas por peso, e o foco é na técnica, rapidez e precisão dos golpes. O esporte promove fair play e possui regras rigorosas para a segurança dos lutadores.'],
