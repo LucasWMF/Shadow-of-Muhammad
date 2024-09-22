@@ -22,8 +22,8 @@ app.get('/historia', function(req, res) {
     res.sendFile(path.join(__dirname, '../../views', 'history.html'));
 });
 
-app.get('/modalidades', function(req, res) {
-    res.sendFile(path.join(__dirname, '../../views', 'modalities.html'));
+app.get('/sobre', function(req, res) {
+    res.sendFile(path.join(__dirname, '../../views', 'about.html'));
 });
 
 app.get('/olimpiadas', function(req, res) {
