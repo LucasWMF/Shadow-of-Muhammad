@@ -47,7 +47,7 @@ body {
 
 body {
     font-family: var(--font-primary);
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .container-all {
@@ -55,7 +55,7 @@ body {
     grid-template-areas: "navbar"
         "main"
         "footer";
-    /* gap: 2rem; */
+    gap: 2rem;
     width: 100vw;
     height: 100%;
     overflow: hidden;
@@ -819,7 +819,7 @@ body {
         max-width: 100vw;
     }
 
-    .image-contain{
+    .image-contain {
         width: 100%;
         max-width: 100vw;
         padding: 1rem;
@@ -833,7 +833,7 @@ body {
         display: none;
     }
 
-    .image-olimpic{
+    .image-olimpic {
         width: 100%;
         max-width: 20vw;
         display: flex;
