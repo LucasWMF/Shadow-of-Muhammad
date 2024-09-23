@@ -1,7 +1,7 @@
 // Dados de conteúdo para diferentes idiomas
 const contentLanguages = {
     Português: {
-        navbar: ['Home', 'Conteúdos <i class="fa-solid fa-chevron-down"></i>', 'Feedback'],
+        navbar: ['Home', 'Conteúdos <i style="margin-left:1rem;" class="fa-solid fa-chevron-down arrow"></i>', 'Feedback'],
         dropnavbar: ['História', 'Sobre', 'Olímpiadas'],
         title: ['Introdução Boxe Olímpico', 'História do Boxe e Federação', 'Modalidades e Regras', 'Melhores Competidores', 'Curiosidades e Benefícios', 'Feedback'],
         textSummary: {
@@ -63,10 +63,14 @@ const contentLanguages = {
             titulo1: [``],
             titulo2: [``],
             titulo3: [``],
-        }
+        },
+        footerTitles: ['SOBRE O SITE', 'REDES SOCIAIS', 'ABAS'],
+        footerTexts: ['Nossa escola online ensina as regras e modalidades do boxe olímpico, oferecendo conhecimento e treino para iniciantes e entusiastas.'],
+        footerLinks: ['HOME', 'HISTÓRIA', 'SOBRE', 'OLÍMPIADAS', 'FEEDBACK'],
+        footerCopy: ['Copyright (c) 2024 Shadow Of Muhammad Todos os direitos reservados Este produto é protegido por direitos autorais e distribuído sob licenças que restringem cópia, distribuição e descompilação.'],
     },
     English: {
-        navbar: ['Home', 'Contents <i class="fa-solid fa-chevron-down"></i>', 'Feedback'],
+        navbar: ['Home', 'Contents <i style="margin-left:1rem;" class="fa-solid fa-chevron-down arrow"></i>', 'Feedback'],
         dropnavbar: ['History', 'About', 'Olympics'],
         title: ['Olympic Boxing Introduction', 'History of Boxing and Federation', 'Modalities and Rules', 'Best Competitors', 'Curiosities and Benefits', 'Feedback'],
         textSummary: {
@@ -107,10 +111,14 @@ const contentLanguages = {
             titulo1: [``],
             titulo2: [``],
             titulo3: [``],
-        }
+        },
+        footerTitles: ['ABOUT THE SITE', 'SOCIAL MEDIA', 'TABS'],
+        footerTexts: ['Our online school teaches the rules and disciplines of Olympic boxing, offering knowledge and training for beginners and enthusiasts.'],
+        footerLinks: ['HOME', 'HISTORY', 'ABOUT', 'OLYMPICS', 'FEEDBACK'],
+        footerCopy: ['Copyright (c) 2024 Shadow Of Muhammad All rights reserved. This product is protected by copyright and distributed under licenses that restrict copying, distribution, and decompilation.'],
     },
     Français: {
-        navbar: ['Accueil', 'Contenus <i class="fa-solid fa-chevron-down"></i>', 'Retour'],
+        navbar: ['Accueil', 'Contenus <i style="margin-left:1rem;" class="fa-solid fa-chevron-down arrow"></i>', 'Retour'],
         dropnavbar: ['Histoire', 'Sur', 'Olympiques'],
         title: ['Introduction Boxe Olympique', 'Histoire de la boxe et de la fédération', 'Modalités et règles', 'Meilleurs compétiteurs', 'Curiosités et avantages', 'Retours'],
         textSummary: {
@@ -138,7 +146,11 @@ const contentLanguages = {
             titulo1: [``],
             titulo2: [``],
             titulo3: [``],
-        }
+        },
+        footerTitles: ['À PROPOS DU SITE', 'RÉSEAUX SOCIAUX', 'ONGLETS'],
+        footerTexts: ['Notre école en ligne enseigne les règles et les disciplines de la boxe olympique, offrant des connaissances et un entraînement pour les débutants et les passionnés.'],
+        footerLinks: ['ACCUEIL', 'HISTOIRE', 'À PROPOS', 'OLYMPIQUES', 'RETOUR'],
+        footerCopy: ['Copyright (c) 2024 Shadow Of Muhammad Tous droits réservés. Ce produit est protégé par des droits d\'auteur et distribué sous des licences qui restreignent la copie, la distribution et la décompilation.'],
     }
 };
 
@@ -162,7 +174,7 @@ function contentLanguage(language) {
     }
 
     // Atualiza os links da navbar
-    const navbarLinks = document.querySelectorAll('.navbar-list .navbar-link');
+    const navbarLinks = document.querySelectorAll('a.nav-link');
 
     for (let i = 0; i < navbarLinks.length; i++) {
         if (navbarLinks[i]) {
@@ -171,7 +183,7 @@ function contentLanguage(language) {
     }
 
     // Atualiza os links do menu suspenso (dropdown)
-    const dropmenuLinks = document.querySelectorAll('.cascata-conteudo a');
+    const dropmenuLinks = document.querySelectorAll('a.dropdown-item');
     const dropmenuItems = contentLanguages[language].dropnavbar;
 
     for (let i = 0; i < dropmenuLinks.length; i++) {
@@ -188,21 +200,12 @@ function contentLanguage(language) {
         }
     });
 
-    // Footer
-    const linkPagesList = document.querySelectorAll('.item-list-pages a');
-
-    // Verifica se foram encontrados links
-    for (let i = 0; i < linkPagesList.length; i++) {
-        if (linkPagesList[i]) {
-            linkPagesList[i].innerHTML = contentLanguages[language].pageList[i] || ''; // Atualiza cada link da navbar
-        }
-    }
 
     // Atualiza os textos da seção de História
     const historyTitles = document.querySelectorAll('.section-main .section-header .h1-history');
     const historyTexts = document.querySelectorAll('.section-main .section-content .p-history');
-
     const historySections = ['all', 'all', 'federation', 'brazil'];
+
     console.log('Total aboutTitle:', historyTitles.length);
     console.log(historyTitles)
     console.log('Total aboutText:', historyTexts.length);
@@ -220,13 +223,13 @@ function contentLanguage(language) {
             // Atualiza texto dependendo da classe do elemento
             if (historyTexts[i].classList.contains('p-history-1')) {
                 historyTexts[i].innerText = contentLanguages[language].textHistory['all'][0] || ''; // Primeiro texto da seção de História
-                console.log(sectionKey)
+                // console.log(sectionKey)
             } else if (historyTexts[i].classList.contains('p-history-2')) {
                 historyTexts[i].innerText = contentLanguages[language].textHistory['all'][1] || ''; // Segundo texto da seção de História
-                console.log(sectionKey)
+                // console.log(sectionKey)
             } else {
                 historyTexts[i].innerText = contentLanguages[language].textHistory[sectionKey][0] || ''; // Atualiza texto baseado na chave da seção
-                console.log(sectionKey)
+                // console.log(sectionKey)
             }
         }
     }
@@ -251,7 +254,48 @@ function contentLanguage(language) {
         if (aboutTexts[i]) {
             // Atualiza texto dependendo da classe do elemento
             aboutTexts[i].innerHTML = contentLanguages[language].textAbout[sectionKey][0] || ''; // Atualiza texto baseado na chave da seção
-            console.log(sectionKey)
+            // console.log(sectionKey)
+        }
+    }
+
+    // Atualiza os textos do rodapé
+    const footerTitles = document.querySelectorAll('h1.title-footer');
+    const footerTexts = document.querySelectorAll('.footer-text');
+    const footerLinks = document.querySelectorAll('.list-pages a');
+    const footerCopy = document.querySelectorAll('.text-copy p');
+
+    console.log(footerTitles);
+    console.log(footerTexts);
+    console.log(footerLinks);
+    console.log(footerCopy);
+
+    const footerTitlesKeys = ['sobre', 'redes_sociais', 'abas'];
+
+    // Atualizando títulos do rodapé
+    for (let i = 0; i < footerTitles.length; i++) {
+        if (footerTitles[i] && contentLanguages[language].footerTitles[i]) {
+            footerTitles[i].innerText = contentLanguages[language].footerTitles[i] || '';
+        }
+    }
+
+    // Atualizando textos do rodapé
+    for (let i = 0; i < footerTexts.length; i++) {
+        if (footerTexts[i] && contentLanguages[language].footerTexts[i]) {
+            footerTexts[i].innerText = contentLanguages[language].footerTexts[i] || '';
+        }
+    }
+
+    // Atualizando links do rodapé
+    for (let i = 0; i < footerLinks.length; i++) {
+        if (footerLinks[i] && contentLanguages[language].footerLinks[i]) {
+            footerLinks[i].innerText = contentLanguages[language].footerLinks[i] || '';
+        }
+    }
+
+    // Atualizando cópias do rodapé
+    for (let i = 0; i < footerCopy.length; i++) {
+        if (footerCopy[i] && contentLanguages[language].footerCopy[i]) {
+            footerCopy[i].innerText = contentLanguages[language].footerCopy[i] || '';
         }
     }
 }
