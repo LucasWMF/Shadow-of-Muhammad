@@ -195,10 +195,13 @@ function contentLanguage(language) {
     }
 }
 
-// Executa a função ao carregar a página
 document.addEventListener('DOMContentLoaded', () => {
-    const selectElement = document.querySelector('.list-item-select select');
-    contentLanguage(selectElement.value); // Define o idioma padrão ao carregar
+    const selectElement = document.querySelector('.form-select'); // Seleciona o elemento correto
+
+    // Verifica se o select existe e possui um valor
+    if (selectElement && selectElement.value) {
+        contentLanguage(selectElement.value); // Define o idioma padrão ao carregar
+    }
 
     // Adiciona evento para mudança de idioma
     selectElement.addEventListener('change', (event) => {

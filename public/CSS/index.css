@@ -37,7 +37,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-primary);
 }
 
 html,
@@ -46,9 +45,10 @@ body {
     height: auto;
 }
 
-/* body { */
+body {
+    font-family: var(--font-primary);
     /* overflow-x: hidden; */
-/* } */
+}
 
 .container-all {
     display: grid;
@@ -113,6 +113,7 @@ body {
 }
 
 .navbar .navbar-nav .nav-link {
+    font-family: var(--font-secondary); 
     color: white;
     font-size: 1.5em;
     padding: 1rem;
@@ -183,10 +184,12 @@ body {
     border: none;
     border-radius: 0;
     width: 100%;
+    font-family: var(--font-secondary); 
     padding: 0.5rem;
 }
 
 .dropdown-menu .dropdown-item {
+    font-family: var(--font-secondary); 
     border-radius: 0;
     color: white;
     font-size: 1.5em;
@@ -196,6 +199,7 @@ body {
 /* Select */
 /* Select */
 .form-select {
+    font-family: var(--font-secondary); 
     font-weight: 500;
     --bs-form-select-bg-img: none;
     background-color: transparent;
