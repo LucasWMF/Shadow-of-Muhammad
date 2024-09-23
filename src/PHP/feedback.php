@@ -1,9 +1,9 @@
 <?php
 session_start();
 include 'config/conexao.php'; // Inclui o arquivo de conexão
-require './PHP/PHPMailer/src/PHPMailer.php';
-require './PHP/PHPMailer/src/SMTP.php';
-require './PHP/PHPMailer/src/Exception.php';
+require '../pacotes/PHPMailer/src/Exception.php';
+require '../pacotes/PHPMailer/src/PHPMailer.php';
+require '../pacotes/PHPMailer/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
