@@ -56,7 +56,7 @@ const contentLanguages = {
             <b>Inclusão Olímpica:</b> O boxe feminino foi incluído nos Jogos Olímpicos em 2012, e desde então segue as mesmas diretrizes e regras do boxe masculino.`],
             titulo9: [`<b>Variações na Regras:</b> <br><br>
             <b>AIBA:</b> A Federação Internacional de Boxe (AIBA) regula o boxe olímpico e suas regras podem ser ajustadas de tempos em tempos para atualizar o sistema de pontuação ou melhorar a segurança. <br><br>`],
-            titulo9: [`<b>História Antiga:</b> O boxe é um dos esportes mais antigos, com evidências de sua prática datando de cerca de 3000 a.C. na Mesopotâmia. Ele também era popular na Grécia Antiga, onde fazia parte dos Jogos Olímpicos antigos.`]
+            titulo10: [`<b>História Antiga:</b> O boxe é um dos esportes mais antigos, com evidências de sua prática datando de cerca de 3000 a.C. na Mesopotâmia. Ele também era popular na Grécia Antiga, onde fazia parte dos Jogos Olímpicos antigos.`]
         },
         titleOlympics: ['', '', '', '', ''],
         textOlympics: {
@@ -83,7 +83,7 @@ const contentLanguages = {
             federation: ['English text about the boxing federation.'],
             brazil: ['English text about boxing in Brazil.'],
         },
-        titleAbout: ['Purpose of the sport and characteristics of the space and material', '', '', '', ''],
+        titleAbout: ['Objective of the sport and characteristics of space and material', 'Rules and modalities', 'Modalities and Specificities in Olympic Boxing', 'Curiosities'],
         textAbout: {
             titulo1: [`In boxing, the main objective is to beat the opponent through regulated combat, using punching techniques. There are two main ways to win: <br> <br> 
             <b>Knockout (KO):</b> When a fighter knocks his opponent down and he is unable to get up before the referee's count ends. <br> <br>
@@ -95,6 +95,12 @@ const contentLanguages = {
             titulo4: [`<b>Body and Coquinho Protector:</b> For additional protection of vital organs and sensitive areas. It is common to wear a protective vest in practice, especially in training. <br> <br>
             <b>Footwear:</b> Boxers wear lightweight, non-slip sneakers designed to provide good mobility and grip in the ring. <br> <br>
             <b>Punching Bags and Training Equipment:</b> During training, boxers use punching bags, speed bags, and other equipment to improve technique and physical conditioning. <br>`],
+            titulo5: [`Olympic boxing, also known as amateur boxing, has specific rules that guarantee the safety of competitors and fairness in the competition. Here are the main rules and modalities associated with Olympic boxing: <br><br>
+            <b>Objective:</b> The objective is to win the fight by scoring clean and effective blows or, in some cases, by knockout (KO). <br><br>
+            <b>Olympic Competition:</b> Generally 3 rounds of 3 minutes each, with a 1-minute break between them. <br> <br>`],
+            titulo6: [`<b>Score:</b> Based on clean and effective strikes. The scoring system can vary, but traditionally judges score based on the clarity and impact of the strikes. In more recent competitions, counting is done based on an electronic or digital system, where each valid blow is recorded by a panel of judges. <br><br>
+            <b>Fouls and Penalties:</b> Punches below the waist, to the back of the head or to the back of the head are prohibited. Unsportsmanlike aggression, such as punches after the “stop” command, may result in penalties or disqualification. <br><br>
+            <b>Winner:</b> The boxer with the most points at the end of the 3 rounds is declared the winner. <br> A boxer may win by disqualification if the opponent commits serious or repeated fouls.`],
         },
         titleOlympics: ['', '', '', '', ''],
         textOlympics: {
@@ -228,7 +234,7 @@ function contentLanguage(language) {
     const aboutTitles = document.querySelectorAll('.section-main .section-header .h1-about');
     const aboutTexts = document.querySelectorAll('.section-main .section-content .p-about');
 
-    const aboutSections = ['titulo1', 'titulo2', 'titulo3', 'titulo4', 'titulo5', 'titulo6', 'titulo7', 'titulo8', 'titulo9'];
+    const aboutSections = ['titulo1', 'titulo2', 'titulo3', 'titulo4', 'titulo5', 'titulo6', 'titulo7', 'titulo8', 'titulo9', 'titulo10'];
     console.log('Total aboutTitle:', aboutTitles.length);
     console.log(aboutTitles)
     console.log('Total aboutText:', aboutTexts.length);
