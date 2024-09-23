@@ -30,8 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 if (this.classList.contains('active')) {
                     this.innerHTML = '<i class="fa-solid fa-times"></i>';
+                    console.log('B')
                 } else {
                     this.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                    console.log('A')
                 }
             });
         }
@@ -39,6 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error("Nenhum elemento encontrado com a classe 'navbarToggle'");
     }
 });
+
+console.log('A')
 
 // document.addEventListener('DOMContentLoaded', () => {
 //     const languageSelect = document.getElementById('list-item-select');

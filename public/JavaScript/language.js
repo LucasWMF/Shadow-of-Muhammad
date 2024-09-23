@@ -30,13 +30,15 @@ const contentLanguages = {
             Recentemente, a AIBA passou a ser vista com desconfiança devido a alegações de corrupção e má administração. Apesar disso, o boxe continua a ser uma modalidade popular, tanto em nível amador quanto profissional, e a AIBA ainda organiza campeonatos e eventos significativos ao redor do mundo.`],
             brazil: ['O boxe no Brasil começou a ganhar popularidade no final do século XIX, especialmente em cidades como São Paulo e Rio de Janeiro. Eder Jofre, campeão mundial dos pesos-galos na década de 1950, foi uma figura crucial para o reconhecimento do boxe brasileiro no cenário internacional. Ele é conhecido por sua técnica e poder de nocaute, acumulando um impressionante recorde em sua carreira. Nos anos 1990 e 2000, Acelino "Popó" Freitas trouxe novos holofotes ao boxe nacional, conquistando títulos mundiais em categorias como super-featherweight e lightweight. Uma das conquistas mais importantes foi em 2016, quando Robson Conceição se tornou o primeiro brasileiro a ganhar uma medalha de ouro olímpica no boxe, durante os Jogos do Rio de Janeiro. O esporte continua a crescer no Brasil, com uma nova geração de boxeadores competindo em nível internacional, apesar dos desafios em termos de apoio institucional e financeiro.']
         },
-        titleAbout: ['','','','',''],
+        titleAbout: ['Objetivo do esporte e características do espaço e material', '', '', '', ''],
         textAbout: {
-            titulo1: [``],
+            titulo1: [`No boxe, o objetivo principal é vencer o oponente por meio de um combate regulamentado, utilizando técnicas de socos. Existem duas formas principais de vitória: <br> <br>
+            <b> Knockout (KO): </b> Quando um lutador derruba o oponente e ele não consegue se levantar antes do término da contagem do árbitro. <br> <br>
+            <b> Decisão dos Juízes: </b> Se o combate vai até o final dos rounds estabelecidos, a vitória é decidida pelos juízes com base na pontuação dos golpes, controle do ringue e estratégia.`],
             titulo2: [``],
             titulo3: [``],
         },
-        titleOlympics: ['','','','',''],
+        titleOlympics: ['', '', '', '', ''],
         textOlympics: {
             titulo1: [``],
             titulo2: [``],
@@ -61,13 +63,13 @@ const contentLanguages = {
             federation: ['English text about the boxing federation.'],
             brazil: ['English text about boxing in Brazil.'],
         },
-        titleAbout: ['','','','',''],
+        titleAbout: ['ingreis', '', '', '', ''],
         textAbout: {
             titulo1: [``],
             titulo2: [``],
             titulo3: [``],
         },
-        titleOlympics: ['','','','',''],
+        titleOlympics: ['', '', '', '', ''],
         textOlympics: {
             titulo1: [``],
             titulo2: [``],
@@ -92,13 +94,13 @@ const contentLanguages = {
             federation: ['Texte sur la fédération de boxe.'],
             brazil: ['Texte sur le boxe au Brésil.'],
         },
-        titleAbout: ['','','','',''],
+        titleAbout: ['Franceis', '', '', '', ''],
         textAbout: {
             titulo1: [``],
             titulo2: [``],
             titulo3: [``],
         },
-        titleOlympics: ['','','','',''],
+        titleOlympics: ['', '', '', '', ''],
         textOlympics: {
             titulo1: [``],
             titulo2: [``],
@@ -167,9 +169,11 @@ function contentLanguage(language) {
     const historyTitles = document.querySelectorAll('.section-main .section-header .h1-history');
     const historyTexts = document.querySelectorAll('.section-main .section-content .p-history');
 
-    const historySections = ['all', 'all', 'federation', 'brazil'];
-    console.log('Total historyTitles:', historyTitles.length);
-    console.log('Total historyTexts:', historyTexts.length);
+    const historySections = ['titulo1', 'all', 'federation', 'brazil'];
+    console.log('Total aboutTitle:', historyTitles.length);
+    console.log(historyTitles)
+    console.log('Total aboutText:', historyTexts.length);
+    console.log(historyTexts)
 
     // Loop para atualizar títulos e textos das seções de História
     for (let i = 0; i < historySections.length; i++) {
@@ -191,6 +195,30 @@ function contentLanguage(language) {
                 historyTexts[i].innerText = contentLanguages[language].textHistory[sectionKey][0] || ''; // Atualiza texto baseado na chave da seção
                 console.log(sectionKey)
             }
+        }
+    }
+
+    const aboutTitles = document.querySelectorAll('.section-main .section-header .h1-about');
+    const aboutTexts = document.querySelectorAll('.section-main .section-content .p-about');
+
+    const aboutSections = ['titulo1', 'all', 'federation', 'brazil'];
+    console.log('Total aboutTitle:', aboutTitles.length);
+    console.log(aboutTitles)
+    console.log('Total aboutText:', aboutTexts.length);
+    console.log(aboutTexts)
+
+    // Loop para atualizar títulos e textos das seções de História
+    for (let i = 0; i < aboutSections.length; i++) {
+        const sectionKey = aboutSections[i];
+
+        if (aboutTitles[i]) {
+            aboutTitles[i].innerHTML = contentLanguages[language].titleAbout[i] || ''; // Atualiza título da seção de História
+        }
+
+        if (aboutTexts[i]) {
+            // Atualiza texto dependendo da classe do elemento
+            aboutTexts[i].innerHTML = contentLanguages[language].textAbout[sectionKey][0] || ''; // Atualiza texto baseado na chave da seção
+            console.log(sectionKey)
         }
     }
 }
