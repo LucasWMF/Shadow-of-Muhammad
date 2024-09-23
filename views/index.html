@@ -41,9 +41,9 @@
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">História</a></li>
-                                    <li><a class="dropdown-item" href="#">Sobre</a></li>
-                                    <li><a class="dropdown-item" href="#">Olímpiadas</a></li>
+                                    <li><a class="dropdown-item" href="/historia">História</a></li>
+                                    <li><a class="dropdown-item" href="/sobre">Sobre</a></li>
+                                    <li><a class="dropdown-item" href="/olimpiadas">Olímpiadas</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -51,7 +51,7 @@
                             </li>
                             <li class="nav-item">
                                 <div class="form-select-wrapper">
-                                    <select class="form-select">
+                                    <select class="form-select" onchange="contentLanguage(this.value)">
                                         <option value="Português">PT-BR</option>
                                         <option value="English">EN</option>
                                         <option value="Français">FR</option>
