@@ -13,45 +13,54 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-all">
         <header class="main-header">
             <div class="main-title">
                 <img src="image/logo.png" alt="" class="main-img-logo">
-                <!-- <img src="/src/image/logo.png" alt="" class="main-img-logo"> -->
                 <h1 class="main-h1-title">Shadow of Muhammad</h1>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="list-item">
-                        <a class="navbar-link" href="/">Home</a>
-                    </li>
-                    <li class="list-item list-cascata">
-                        <a class="navbar-link list-icon">Conteúdos <i class="fa-solid fa-chevron-down"></i></a>
-                        <div class="cascata-conteudo">
-                            <a href="/historia">História</a>
-                            <a href="/sobre">Sobre</a>
-                            <a href="/olimpiadas">Olímpiadas</a>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <a class="navbar-link" href="/feedback">Feedback</a>
-                    </li>
-                    <li class="list-item-select">
-                        <!-- <i class="fa-solid fa-chevron-down option-i"></i> -->
-                        <select onchange="contentLanguage(this.value)">
-                            <option value="Português">PT-BR</option>
-                            <option value="English">EN</option>
-                            <option value="Français">FR</option>
-                        </select>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <p>Conteúdos</p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">História</a></li>
+                                    <li><a class="dropdown-item" href="#">Sobre</a></li>
+                                    <li><a class="dropdown-item" href="#">Olímpiadas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Feedback</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="form-select-wrapper">
+                                    <select class="form-select">
+                                        <option value="Português">PT-BR</option>
+                                        <option value="English">EN</option>
+                                        <option value="Français">FR</option>
+                                    </select>
+                                    <i class="fa-solid fa-chevron-down arrow-select"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-
-            <nav class="nav-bar-cel">
-            </nav>
-
-
-            </head>
+        </header>
 
             <body>
                 <div class="container2">

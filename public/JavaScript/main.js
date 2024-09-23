@@ -14,6 +14,31 @@ window.addEventListener("focus", () => {
     // docFaviIcon.href = docFaviIcon;
 })
 
+function toggleNavbar() {
+    const navbarList = document.querySelector('.navbar-list');
+    navbarList.classList.toggle('show');
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButtons = document.getElementsByClassName('navbar-toggler');
+
+    if (toggleButtons.length > 0) {
+        // Adiciona o evento apenas se o botão existir
+        for (let i = 0; i < toggleButtons.length; i++) {
+            toggleButtons[i].addEventListener('click', function () {
+                this.classList.toggle('active');
+
+                if (this.classList.contains('active')) {
+                    this.innerHTML = '<i class="fa-solid fa-times"></i>';
+                } else {
+                    this.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                }
+            });
+        }
+    } else {
+        console.error("Nenhum elemento encontrado com a classe 'navbarToggle'");
+    }
+});
 
 // document.addEventListener('DOMContentLoaded', () => {
 //     const languageSelect = document.getElementById('list-item-select');

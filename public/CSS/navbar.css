@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.main-header {
+    grid-area: navbar;
+    width: 100%;
+    height: auto;
+    background-color: #5A0000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+/* Título */
+.main-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Logo */
+.main-img-logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Navbar */
+.bg-body-tertiary {
+    background-color: transparent !important;
+}
+
+.navbar {
+    background-color: #5A0000 !important;
+    color: white;
+    width: 100%;
+    display: flex;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10rem;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.5em;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Efeito de hover nos links da navbar */
+.nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: linear-gradient(to right, red, black);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-item .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.form-select::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: linear-gradient(to right, red, black);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.form-select.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.dropdown-toggle::after {
+    border: 0;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: linear-gradient(to right, red, black);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.form-select.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* Dropdown */
+.dropdown-menu {
+    background-color: #5A0000;
+    color: white;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.dropdown-menu .dropdown-item {
+    border-radius: 0;
+    color: white;
+    font-size: 1.5em;
+    padding: 1rem;
+}
+
+/* Select */
+/* Select */
+.form-select {
+    font-weight: 500;
+    --bs-form-select-bg-img: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    height: 100%;
+    font-size: 1.5em;
+    text-align: left;
+    appearance: none;
+    position: relative;
+    padding: 1rem;
+    padding-right: 30px;
+    outline: none;
+}
+
+/* Ajustes nos options */
+.form-select option {
+    background-color: #5A0000;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+
+.form-select:focus {
+    outline: none !important;
+    border: transparent !important;
+    -webkit-outline: none;
+}
+
+.dropdown-item:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline red;
+}
+
+.dropdown-toggle p {
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+.form-select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.arrow-select {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0);
+    /* Rotação inicial */
+    transition: transform 0.3s ease;
+    /* Transição suave */
+    color: white;
+    font-size: 24px;
+    pointer-events: none;
+}
+
+.form-select:focus+.arrow-select {
+    transform: translateY(-50%) rotate(180deg);
+    /* Rotação ao focar */
+}
+
+.dropdown-toggle .arrow {
+    transition: transform 0.3s ease;
+    /* Transição suave */
+    transform: rotate(0);
+    /* Rotação inicial */
+}
+
+.dropdown-toggle:focus .arrow {
+    transform: rotate(180deg);
+    /* Rotação ao focar ou passar o mouse */
+}
+
+/* Aumentar tamanho do hambúrguer */
+.navbar-toggler {
+    font-size: 2em;
+    /* Aumenta o tamanho do ícone do hambúrguer */
+    background-color: transparent;
+    /* Para manter a aparência sem fundo */
+    border: none;
+    /* Remove a borda padrão do botão */
+}
+
+.navbar-toggler .fa-bars {
+    font-size: inherit;
+    /* Herda o tamanho do botão */
+    color: white;
+    /* Cor do ícone */
+}
+.navbar-toggle i {
+    font-weight: 100;
+}
+
+/* Responsividade */
+@media (max-width: 988px) {
+    .navbar-toggle {
+        transition: background-color 1s ease, transform 1s ease;
+    }
+
+
+    .main-title {
+        flex-direction: row;
+        /* Garante que os itens fiquem em linha */
+        justify-content: space-between;
+        /* Espaço entre título e botão */
+        align-items: center;
+        /* Alinha verticalmente */
+    }
+
+    .main-title h1 {
+        margin: 0;
+    }
+
+    .navbar .navbar-nav {
+        flex-direction: column;
+        /* Alinha os itens da navbar em coluna */
+        gap: 0rem;
+        /* Espaçamento entre os itens */
+    }
+
+    .dropdown-menu .dropdown-item {
+        font-size: 1em;
+        /* Diminui o tamanho do texto dos itens do dropdown */
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 1.2em;
+        padding-right: 1rem;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        /* Move o botão de hambúrguer para a direita */
+    }
+
+    .navbar .navbar-nav {
+        gap: 1rem;
+    }
+
+    .form-select-wrapper {
+        display: flex;
+        align-items: flex-start;
+        /* Alinha ao topo */
+        justify-content: flex-start;
+        /* Alinha à esquerda */
+        text-align: left;
+        /* Alinha o texto à esquerda */
+        font-size: 1em;
+        /* Diminui o tamanho do texto do select */
+        width: 100%;
+    }
+
+    .arrow-select {
+        left: 12.5%;
+        font-size: 20px;
+    }
+
+    .arrow {
+        font-size: 20px;
+    }
+
+    .form-select {
+        font-size: 1.2em;
+        /* Diminui o tamanho do texto do select */
+    }
+
+    .form-select option {
+        font-size: 1em;
+        /* Diminui o tamanho do texto dos options */
+        text-align: left;
+    }
+
+    .arrow-select {
+        right: 1rem; /* Garante que a seta fique no final do espaço */
+        left: auto; /* Remove qualquer valor left que possa estar afetando a posição */
+    }
+
+    .dropdown-toggle {
+        justify-content: space-between; /* Garante que a seta fique no final do espaço */
+    }
+}

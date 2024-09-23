@@ -12,23 +12,36 @@ const contentLanguages = {
             'Curiosidades e Benefícios': ['Texto sobre curiosidades e benefícios em Português']
         },
         buttonMore: 'Ver Mais',
+        pageList: ['Home', 'História', 'Sobre', 'Olímpiadas', 'Feedback'],
         // Página de História
         titleHistory: ['História do Boxe', 'Federação do Boxe', 'Boxe no Brasil'],
         textHistory: {
             all: [`O boxe é um dos esportes de combate mais antigos, com origem na Grécia Antiga, onde foi incluído nos Jogos Olímpicos em 688 a.C. Na época, o boxe era praticado como parte do treinamento militar e disputado por atletas nus. O primeiro campeão olímpico registrado foi Onosmastos de Esmirna. O esporte passou por um período de declínio após a queda do Império Romano, mas ressurgiu na Inglaterra do século XVIII com o estabelecimento das "Regras de Queensberry" em 1867, que padronizaram o esporte, incluindo o uso de luvas e rounds cronometrados. 
                 
-            Na era moderna, o boxe olímpico estreou nos Jogos Olímpicos de St. Louis, em 1904, com sete categorias de peso. O esporte é praticado exclusivamente por pugilistas amadores e possui regras específicas para garantir a segurança dos atletas, como o uso de capacetes (para mulheres) e outros equipamentos de proteção. Em 1920, a Federação Internacional de Boxe Amador (FIBA) foi criada e substituída, em 1946, pela Associação Internacional de Boxe Amador (AIBA), que regulou o esporte por décadas até enfrentar controvérsias recentes e perder o reconhecimento do Comitê Olímpico Internacional (COI).`, 
-            `O boxe feminino só foi introduzido nos Jogos Olímpicos de Londres 2012. Em 2024, o esporte será disputado em 13 categorias (7 masculinas e 6 femininas), com 248 atletas competindo. Grandes potências no esporte incluem os Estados Unidos e Cuba, que possuem um histórico de sucesso olímpico notável, com múltiplos campeões como Teófilo Stevenson e Félix Savón. 
+            Na era moderna, o boxe olímpico estreou nos Jogos Olímpicos de St. Louis, em 1904, com sete categorias de peso. O esporte é praticado exclusivamente por pugilistas amadores e possui regras específicas para garantir a segurança dos atletas, como o uso de capacetes (para mulheres) e outros equipamentos de proteção. Em 1920, a Federação Internacional de Boxe Amador (FIBA) foi criada e substituída, em 1946, pela Associação Internacional de Boxe Amador (AIBA), que regulou o esporte por décadas até enfrentar controvérsias recentes e perder o reconhecimento do Comitê Olímpico Internacional (COI).`,
+                `O boxe feminino só foi introduzido nos Jogos Olímpicos de Londres 2012. Em 2024, o esporte será disputado em 13 categorias (7 masculinas e 6 femininas), com 248 atletas competindo. Grandes potências no esporte incluem os Estados Unidos e Cuba, que possuem um histórico de sucesso olímpico notável, com múltiplos campeões como Teófilo Stevenson e Félix Savón. 
             
             No Brasil, o boxe ganhou destaque no final do século XIX e consolidou-se com atletas como Eder Jofre e Acelino "Popó" Freitas. Em 2016, Robson Conceição fez história ao conquistar o primeiro ouro olímpico do país na modalidade, consolidando o boxe como uma importante disciplina no cenário esportivo brasileiro.`
             ],
             federation: [`A Federação Internacional de Boxe Amador (FIBA), fundada em 1920, tinha como objetivo principal regulamentar o boxe em nível global, promovendo a uniformidade nas regras e condições de competição. Em 1946, a FIBA foi sucedida pela Associação Internacional de Boxe Amador (AIBA), que continuou esse trabalho e também se encarregou de organizar competições internacionais, incluindo os Jogos Olímpicos.
 
-                A AIBA, ao longo dos anos, enfrentou desafios e controvérsias, principalmente relacionadas à gestão do esporte e à transparência. Essas questões culminaram na descredenciação da AIBA pelo Comitê Olímpico Internacional (COI) em 2019, embora o boxe ainda faça parte dos Jogos Olímpicos. A organização tem se esforçado para recuperar sua reputação e reintegrar-se ao sistema olímpico.
+            A AIBA, ao longo dos anos, enfrentou desafios e controvérsias, principalmente relacionadas à gestão do esporte e à transparência. Essas questões culminaram na descredenciação da AIBA pelo Comitê Olímpico Internacional (COI) em 2019, embora o boxe ainda faça parte dos Jogos Olímpicos. A organização tem se esforçado para recuperar sua reputação e reintegrar-se ao sistema olímpico.
                 
-                Recentemente, a AIBA passou a ser vista com desconfiança devido a alegações de corrupção e má administração. Apesar disso, o boxe continua a ser uma modalidade popular, tanto em nível amador quanto profissional, e a AIBA ainda organiza campeonatos e eventos significativos ao redor do mundo.`],
-                brazil: ['O boxe no Brasil começou a ganhar popularidade no final do século XIX, especialmente em cidades como São Paulo e Rio de Janeiro. Eder Jofre, campeão mundial dos pesos-galos na década de 1950, foi uma figura crucial para o reconhecimento do boxe brasileiro no cenário internacional. Ele é conhecido por sua técnica e poder de nocaute, acumulando um impressionante recorde em sua carreira. Nos anos 1990 e 2000, Acelino "Popó" Freitas trouxe novos holofotes ao boxe nacional, conquistando títulos mundiais em categorias como super-featherweight e lightweight. Uma das conquistas mais importantes foi em 2016, quando Robson Conceição se tornou o primeiro brasileiro a ganhar uma medalha de ouro olímpica no boxe, durante os Jogos do Rio de Janeiro. O esporte continua a crescer no Brasil, com uma nova geração de boxeadores competindo em nível internacional, apesar dos desafios em termos de apoio institucional e financeiro.']
+            Recentemente, a AIBA passou a ser vista com desconfiança devido a alegações de corrupção e má administração. Apesar disso, o boxe continua a ser uma modalidade popular, tanto em nível amador quanto profissional, e a AIBA ainda organiza campeonatos e eventos significativos ao redor do mundo.`],
+            brazil: ['O boxe no Brasil começou a ganhar popularidade no final do século XIX, especialmente em cidades como São Paulo e Rio de Janeiro. Eder Jofre, campeão mundial dos pesos-galos na década de 1950, foi uma figura crucial para o reconhecimento do boxe brasileiro no cenário internacional. Ele é conhecido por sua técnica e poder de nocaute, acumulando um impressionante recorde em sua carreira. Nos anos 1990 e 2000, Acelino "Popó" Freitas trouxe novos holofotes ao boxe nacional, conquistando títulos mundiais em categorias como super-featherweight e lightweight. Uma das conquistas mais importantes foi em 2016, quando Robson Conceição se tornou o primeiro brasileiro a ganhar uma medalha de ouro olímpica no boxe, durante os Jogos do Rio de Janeiro. O esporte continua a crescer no Brasil, com uma nova geração de boxeadores competindo em nível internacional, apesar dos desafios em termos de apoio institucional e financeiro.']
         },
+        titleAbout: ['','','','',''],
+        textAbout: {
+            titulo1: [``],
+            titulo2: [``],
+            titulo3: [``],
+        },
+        titleOlympics: ['','','','',''],
+        textOlympics: {
+            titulo1: [``],
+            titulo2: [``],
+            titulo3: [``],
+        }
     },
     English: {
         navbar: ['Home', 'Contents <i class="fa-solid fa-chevron-down"></i>', 'Feedback'],
@@ -48,6 +61,18 @@ const contentLanguages = {
             federation: ['English text about the boxing federation.'],
             brazil: ['English text about boxing in Brazil.'],
         },
+        titleAbout: ['','','','',''],
+        textAbout: {
+            titulo1: [``],
+            titulo2: [``],
+            titulo3: [``],
+        },
+        titleOlympics: ['','','','',''],
+        textOlympics: {
+            titulo1: [``],
+            titulo2: [``],
+            titulo3: [``],
+        }
     },
     Français: {
         navbar: ['Accueil', 'Contenus <i class="fa-solid fa-chevron-down"></i>', 'Retour'],
@@ -67,6 +92,18 @@ const contentLanguages = {
             federation: ['Texte sur la fédération de boxe.'],
             brazil: ['Texte sur le boxe au Brésil.'],
         },
+        titleAbout: ['','','','',''],
+        textAbout: {
+            titulo1: [``],
+            titulo2: [``],
+            titulo3: [``],
+        },
+        titleOlympics: ['','','','',''],
+        textOlympics: {
+            titulo1: [``],
+            titulo2: [``],
+            titulo3: [``],
+        }
     }
 };
 
@@ -91,11 +128,10 @@ function contentLanguage(language) {
 
     // Atualiza os links da navbar
     const navbarLinks = document.querySelectorAll('.navbar-list .navbar-link');
-    const navbarItems = contentLanguages[language].navbar;
 
     for (let i = 0; i < navbarLinks.length; i++) {
         if (navbarLinks[i]) {
-            navbarLinks[i].innerHTML = navbarItems[i] || ''; // Atualiza cada link da navbar
+            navbarLinks[i].innerHTML = contentLanguages[language].navbar[i] || ''; // Atualiza cada link da navbar
         }
     }
 
@@ -116,6 +152,16 @@ function contentLanguage(language) {
             button.innerText = contentLanguages[language].buttonMore || ''; // Atualiza o texto do botão
         }
     });
+
+    // Footer
+    const linkPagesList = document.querySelectorAll('.item-list-pages a');
+
+    // Verifica se foram encontrados links
+    for (let i = 0; i < linkPagesList.length; i++) {
+        if (linkPagesList[i]) {
+            linkPagesList[i].innerHTML = contentLanguages[language].pageList[i] || ''; // Atualiza cada link da navbar
+        }
+    }
 
     // Atualiza os textos da seção de História
     const historyTitles = document.querySelectorAll('.section-main .section-header .h1-history');
