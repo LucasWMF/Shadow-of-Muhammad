@@ -55,8 +55,11 @@ const contentLanguages = {
             <b>Semelhança com Masculino:</b> Segue as mesmas regras gerais do boxe olímpico masculino, com categorias de peso específicas para as mulheres.<br><br>
             <b>Inclusão Olímpica:</b> O boxe feminino foi incluído nos Jogos Olímpicos em 2012, e desde então segue as mesmas diretrizes e regras do boxe masculino.`],
             titulo9: [`<b>Variações na Regras:</b> <br><br>
-            <b>AIBA:</b> A Federação Internacional de Boxe (AIBA) regula o boxe olímpico e suas regras podem ser ajustadas de tempos em tempos para atualizar o sistema de pontuação ou melhorar a segurança. <br><br>`],
-            titulo10: [`<b>História Antiga:</b> O boxe é um dos esportes mais antigos, com evidências de sua prática datando de cerca de 3000 a.C. na Mesopotâmia. Ele também era popular na Grécia Antiga, onde fazia parte dos Jogos Olímpicos antigos.`]
+            <b>AIBA:</b> A Federação Internacional de Boxe (AIBA) regula o boxe olímpico e suas regras podem ser ajustadas de tempos em tempos para atualizar o sistema de pontuação ou melhorar a segurança.`],
+            titulo10: [`<b>História Antiga:</b> O boxe é um dos esportes mais antigos, com evidências de sua prática datando de cerca de 3000 a.C. na Mesopotâmia. Ele também era popular na Grécia Antiga, onde fazia parte dos Jogos Olímpicos antigos. <br><br>
+            <b>Luvas de Boxe:</b> Originalmente, os boxeadores lutavam sem luvas, usando apenas bandagens nas mãos. As luvas foram introduzidas para proteger tanto os lutadores quanto para evitar lesões graves.`],
+            titulo11: [`<b>O Maior Knockout da História:</b> O recorde de maior tempo entre um golpe e a contagem final de um knockout pertence a Jack Dempsey, que nocauteou Jess Willard no primeiro round de um combate em 1919. Dempsey foi famoso por sua potência de soco. <br><br>
+            <b>Boxe no Cinema:</b> O boxe tem sido um tema popular no cinema, com filmes icônicos como "Rocky" (1976), que conta a história de um boxeador amador que tem uma chance de lutar pelo título mundial. O sucesso do filme levou a uma série de sequências e spin-offs, incluindo a série "Creed".`]
         },
         titleOlympics: ['', '', '', '', ''],
         textOlympics: {
@@ -101,6 +104,18 @@ const contentLanguages = {
             titulo6: [`<b>Score:</b> Based on clean and effective strikes. The scoring system can vary, but traditionally judges score based on the clarity and impact of the strikes. In more recent competitions, counting is done based on an electronic or digital system, where each valid blow is recorded by a panel of judges. <br><br>
             <b>Fouls and Penalties:</b> Punches below the waist, to the back of the head or to the back of the head are prohibited. Unsportsmanlike aggression, such as punches after the “stop” command, may result in penalties or disqualification. <br><br>
             <b>Winner:</b> The boxer with the most points at the end of the 3 rounds is declared the winner. <br> A boxer may win by disqualification if the opponent commits serious or repeated fouls.`],
+            titulo7: [`<b>Weight Classes:</b> <br><br>
+            <b>Male and Female:</b> There are different weight classes, ranging from lightweight to heavyweight. The classes may vary slightly between international and regional competitions. <br><br>
+            <b>Divisions:</b> Weight classes are set to ensure that competitors are similar in size, minimizing weight advantage.`],
+            titulo8: [`<b>Women's Boxing:</b> <br><br>
+            <b>Similarity to Men's:</b> Follows the same general rules as men's Olympic boxing, with specific weight classes for women.<br><br>
+            <b>Olympic Inclusion:</b> Women's boxing was included in the Olympic Games in 2012, and has since followed the same guidelines and rules as men's boxing.`],
+            titulo9: [`<b>Rules Variations:</b> <br><br>
+            <b>AIBA:</b> The International Boxing Federation (AIBA) regulates Olympic boxing, and its rules may be adjusted from time to time to update the scoring system or improve safety.`],
+            titulo10: [`<b>Early History:</b> Boxing is one of the oldest sports, with evidence of its practice dating back to around 3000 BC in Mesopotamia. It was also popular in Ancient Greece, where it was part of the ancient Olympic Games. <br><br>
+            <b>Boxing Gloves:</b> Originally, boxers fought without gloves, using only bandages on their hands. Gloves were introduced to both protect the fighters and prevent serious injuries.`],
+            titulo11: [`<b>The Greatest Knockout in History:</b> The record for the longest time between a blow and the final count of a knockout is held by Jack Dempsey, who knocked out Jess Willard in the first round of a fight in 1919. Dempsey was famous for his punching power. <br><br>
+            <b>Boxing in Film:</b> Boxing has long been a popular theme in cinema, with iconic films such as "Rocky" (1976), which tells the story of an amateur boxer who gets a shot at the world title. The film's success led to a number of sequels and spin-offs, including the "Creed" series.`]
         },
         titleOlympics: ['', '', '', '', ''],
         textOlympics: {
@@ -127,11 +142,37 @@ const contentLanguages = {
             federation: ['Texte sur la fédération de boxe.'],
             brazil: ['Texte sur le boxe au Brésil.'],
         },
-        titleAbout: ['Franceis', '', '', '', ''],
+        titleAbout: ["Objectif du sport et caractéristiques de l'espace et du matériel", 'Règles et modalités', 'Modalities and Specificities in Olympic Boxing', 'Curiosités'],
         textAbout: {
-            titulo1: [``],
-            titulo2: [`<b>Ring de boxe :</b> L'espace où se déroulent les combats est un ring carré, mesurant généralement entre 4,9 et 7,3 mètres de côté. Le ring est entouré de cordes pour garantir que les lutteurs restent dans la zone désignée.`],
-            titulo3: [``],
+            titulo1: [`En boxe, l'objectif principal est de vaincre l'adversaire au moyen d'un combat réglé, en utilisant des techniques de frappe. Il existe deux manières principales de gagner : <br> <br>
+                <b>KO (Knockout) :</b> Lorsqu'un combattant met son adversaire à terre et qu'il est incapable de se relever avant la fin du décompte de l'arbitre. <br> <br>
+                <b>Décision des juges :</b> Si le combat se poursuit jusqu'à la fin des rounds établis, la victoire est décidée par les juges en fonction du décompte des coups, du contrôle du ring et de la stratégie. <br>`],
+                titulo2: [`<b>Ring de boxe :</b> L'espace où se déroulent les combats est un ring carré, mesurant généralement entre 4,9 et 7,3 mètres de côté. Le ring est entouré de cordes pour garantir que les lutteurs restent dans la zone désignée.`],
+                titulo3: [`<b>Matériaux :</b> <br>
+                <b>Gants de boxe :</b> Utilisés pour protéger les mains des combattants et minimiser le risque de blessure des adversaires. Les gants sont rembourrés et la taille varie en fonction de la catégorie de poids et des règles spécifiques du combat. <br> <br>
+                <b>Protège-dents :</b> Un dispositif de protection pour les dents et la mâchoire qui aide à prévenir les blessures aux dents et les fractures de la mâchoire. <br> <br>`],
+                titulo4: [`<b>Protecteur du corps et du coquin :</b> Pour une protection supplémentaire des organes vitaux et des zones sensibles. Il est courant de porter un gilet de protection à l'entraînement, en particulier à l'entraînement. <br> <br>
+                <b>Chaussures :</b> Les boxeurs portent des baskets légères et antidérapantes conçues pour offrir une bonne mobilité et une bonne adhérence sur le ring. <br> <br>
+                <b>Sacs de frappe et équipement d'entraînement :</b> Pendant l'entraînement, les boxeurs utilisent des sacs de frappe, des sacs de vitesse et d'autres équipements pour améliorer leur technique et leur condition physique. <br>`],
+                titulo5 : [`La boxe olympique, également connue sous le nom de boxe amateur, a des règles spécifiques qui garantissent la sécurité des compétiteurs et l'équité de la compétition. Voici les principales règles et modalités associées à la boxe olympique : <br><br>
+                <b>Objectif :</b> L'objectif est de gagner le combat en portant des coups propres et efficaces ou, dans certains cas, par KO (coup de grâce). <br><br>
+                <b>Compétition olympique :</b> Généralement 3 rounds de 3 minutes chacun, avec une pause d'une minute entre eux. <br> <br>`],
+                titulo6 : [`<b>Score :</b> Basé sur des coups propres et efficaces. Le système de notation peut varier, mais traditionnellement, les juges notent en fonction de la clarté et de l'impact des coups. Dans les compétitions plus récentes, le décompte est effectué sur la base d'un système électronique ou numérique, où chaque coup valide est enregistré par un panel de juges. <br><br>
+                <b>Fautes et pénalités :</b> Les coups de poing sous la taille, à l'arrière de la tête ou à l'arrière de la tête sont interdits. Les agressions antisportives, comme les coups de poing après l'ordre « stop », peuvent entraîner des pénalités ou une disqualification. <br><br>
+                <b>Vainqueur :</b> Le boxeur ayant le plus de points à la fin des 3 rounds est déclaré vainqueur. <br> Un boxeur peut gagner par disqualification si l'adversaire commet des fautes graves ou répétées.`],
+                titulo7: [`<b>Catégories de poids :</b> <br><br>
+                <b>Hommes et femmes :</b> Il existe différentes catégories de poids, allant des poids légers aux poids lourds. Les catégories peuvent varier légèrement entre les compétitions internationales et régionales. <br><br>
+                <b>Divisions :</b> Les catégories de poids sont définies de manière à ce que les concurrents soient de taille similaire, ce qui minimise l'avantage de poids.`],
+                titulo8 : [`<b>Boxe féminine :</b> <br><br>
+                <b>Similitude avec la boxe masculine :</b> Elle suit les mêmes règles générales que la boxe olympique masculine, avec des catégories de poids spécifiques pour les femmes.<br><br>
+                <b>Inclusion olympique :</b> La boxe féminine a été incluse aux Jeux olympiques en 2012 et suit depuis les mêmes directives et règles que la boxe masculine.`],
+                titulo9 : [`<b>Variations des règles :</b> <br><br>
+                <b>AIBA :</b> La Fédération internationale de boxe (AIBA) réglemente la boxe olympique et ses règles peuvent être ajustées de temps à autre pour mettre à jour le système de notation ou améliorer la sécurité.`],
+                titulo10 : [`<b>Histoire ancienne :</b> La boxe est l'un des sports les plus anciens, avec des preuves de sa pratique remontant à environ 3000 av. J.-C. en Mésopotamie. Elle était également populaire dans la Grèce antique, où elle faisait partie des anciens Jeux olympiques. <br><br>
+                <b>Gants de boxe :</b> À l'origine, les boxeurs combattaient sans gants, utilisant uniquement des bandages sur leurs mains. Les gants ont été introduits à la fois pour protéger les combattants et pour éviter les blessures graves.`],
+                titulo11: [`<b>Le plus grand KO de l'histoire :</b> le record du temps le plus long entre un coup et le décompte final d'un KO est détenu par Jack Dempsey, qui a mis KO Jess Willard au premier round d'un combat en 1919. Dempsey était célèbre pour sa puissance de frappe. <br><br>
+                <b>La boxe au cinéma :</b> la boxe est depuis longtemps un thème populaire au cinéma, avec des films emblématiques tels que "Rocky" (1976), qui raconte l'histoire d'un boxeur amateur qui obtient une chance de remporter le titre mondial. Le succès du film a donné lieu à un certain nombre de suites et de spin-offs, notamment la série "Creed".`]
+                
         },
         titleOlympics: ['', '', '', '', ''],
         textOlympics: {
@@ -234,7 +275,7 @@ function contentLanguage(language) {
     const aboutTitles = document.querySelectorAll('.section-main .section-header .h1-about');
     const aboutTexts = document.querySelectorAll('.section-main .section-content .p-about');
 
-    const aboutSections = ['titulo1', 'titulo2', 'titulo3', 'titulo4', 'titulo5', 'titulo6', 'titulo7', 'titulo8', 'titulo9', 'titulo10'];
+    const aboutSections = ['titulo1', 'titulo2', 'titulo3', 'titulo4', 'titulo5', 'titulo6', 'titulo7', 'titulo8', 'titulo9', 'titulo10', 'titulo11'];
     console.log('Total aboutTitle:', aboutTitles.length);
     console.log(aboutTitles)
     console.log('Total aboutText:', aboutTexts.length);
