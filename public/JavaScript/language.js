@@ -30,13 +30,33 @@ const contentLanguages = {
             Recentemente, a AIBA passou a ser vista com desconfiança devido a alegações de corrupção e má administração. Apesar disso, o boxe continua a ser uma modalidade popular, tanto em nível amador quanto profissional, e a AIBA ainda organiza campeonatos e eventos significativos ao redor do mundo.`],
             brazil: ['O boxe no Brasil começou a ganhar popularidade no final do século XIX, especialmente em cidades como São Paulo e Rio de Janeiro. Eder Jofre, campeão mundial dos pesos-galos na década de 1950, foi uma figura crucial para o reconhecimento do boxe brasileiro no cenário internacional. Ele é conhecido por sua técnica e poder de nocaute, acumulando um impressionante recorde em sua carreira. Nos anos 1990 e 2000, Acelino "Popó" Freitas trouxe novos holofotes ao boxe nacional, conquistando títulos mundiais em categorias como super-featherweight e lightweight. Uma das conquistas mais importantes foi em 2016, quando Robson Conceição se tornou o primeiro brasileiro a ganhar uma medalha de ouro olímpica no boxe, durante os Jogos do Rio de Janeiro. O esporte continua a crescer no Brasil, com uma nova geração de boxeadores competindo em nível internacional, apesar dos desafios em termos de apoio institucional e financeiro.']
         },
-        titleAbout: ['Objetivo do esporte e características do espaço e material', '', '', '', ''],
+        titleAbout: ['Objetivo do esporte e características do espaço e material', 'Regras e modalidades', 'Modalidades e Especificidades no Boxe Olímpico', 'Curiosidades'],
         textAbout: {
             titulo1: [`No boxe, o objetivo principal é vencer o oponente por meio de um combate regulamentado, utilizando técnicas de socos. Existem duas formas principais de vitória: <br> <br>
             <b> Knockout (KO): </b> Quando um lutador derruba o oponente e ele não consegue se levantar antes do término da contagem do árbitro. <br> <br>
             <b> Decisão dos Juízes: </b> Se o combate vai até o final dos rounds estabelecidos, a vitória é decidida pelos juízes com base na pontuação dos golpes, controle do ringue e estratégia.`],
-            titulo2: [``],
-            titulo3: [``],
+            titulo2: [`<b>Ringue do Boxe:</b> O espaço onde ocorrem os combates é um ringue quadrado, geralmente com medidas variando entre 4,9 a 7,3 metros de cada lado. O ringue é cercado por cordas para garantir que os lutadores permaneçam dentro da área designada. `],
+            titulo3: [`<b>Materiais:</b> <br>
+            <b>Luvas de Boxe:</b> Usadas para proteger as mãos dos lutadores e minimizar o risco de lesões nos oponentes. As luvas são acolchoadas e o tamanho varia conforme a categoria de peso e as regras específicas da luta. <br> <br>
+            <b>Protetor Bucal:</b> Um dispositivo de proteção para os dentes e a mandíbula, que ajuda a evitar lesões dentárias e fraturas na mandíbula. <br> <br>`],
+            titulo4: [`<b>Protetor de Corpo e Coquinho:</b> Para proteção adicional dos órgãos vitais e áreas sensíveis. É comum usar um colete protetor na prática, especialmente em treinos. <br> <br>
+            <b>Calçado:</b> Os boxeadores usam tênis leves e antiderrapantes, projetados para proporcionar boa mobilidade e aderência ao ringue. <br> <br>
+            <b>Saco de Pancadas e Equipamentos de Treino:</b> Durante o treinamento, os boxeadores usam sacos de pancadas, sacos speed (sacos de velocidade), e outros equipamentos para aprimorar a técnica e o condicionamento físico. <br>`],
+            titulo5: [`O boxe olímpico, também conhecido como boxe amador, tem regras específicas que garantem a segurança dos competidores e a justiça na competição. Aqui estão as principais regras e modalidades associadas ao boxe olímpico: <br><br>
+            <b>Objetivo:</b> O objetivo é vencer o combate através da pontuação de golpes limpos e eficazes ou, em alguns casos, por knockout (KO). <br><br>
+            <b>Competição Olimpica:</b> Geralmente 3 rounds de 3 minutos cada, com 1 minuto de intervalo entre eles. <br> <br>`],
+            titulo6: [`<b>Pontuação:</b> Baseada em golpes limpos e eficazes. O sistema de pontuação pode variar, mas tradicionalmente os juízes pontuam com base na clareza e no impacto dos golpes. Em competições mais recentes, a contagem é feita com base em um sistema eletrônico ou digital, onde cada golpe válido é registrado por um painel de juízes. <br><br>
+            <b>Faltas e Penalidades:</b> Socos abaixo da cintura, na nuca ou nas costas da cabeça são proibidos. Agressões antidesportivas, como socos após o comando de “pare”, podem resultar em penalidades ou desqualificação. <br><br>
+            <b>Vencedor:</b> O boxeador com mais pontos ao final dos 3 rounds é declarado vencedor. <br> Um boxeador pode vencer por desqualificação se o oponente cometer faltas graves ou repetidas.`],
+            titulo7: [`<b>Categorias de Peso:</b> <br><br>
+            <b>Maculino e Feminino:</b> Existem diferentes categorias de peso, variando de pesos leves a pesados. As categorias podem variar um pouco entre as competições internacionais e regionais. <br><br>
+            <b>Divisões:</b> Categorias de peso são definidas para garantir que os competidores tenham tamanhos similares, minimizando a vantagem do peso.`],
+            titulo8: [`<b>Boxe Feminino:</b> <br><br>
+            <b>Semelhança com Masculino:</b> Segue as mesmas regras gerais do boxe olímpico masculino, com categorias de peso específicas para as mulheres.<br><br>
+            <b>Inclusão Olímpica:</b> O boxe feminino foi incluído nos Jogos Olímpicos em 2012, e desde então segue as mesmas diretrizes e regras do boxe masculino.`],
+            titulo9: [`<b>Variações na Regras:</b> <br><br>
+            <b>AIBA:</b> A Federação Internacional de Boxe (AIBA) regula o boxe olímpico e suas regras podem ser ajustadas de tempos em tempos para atualizar o sistema de pontuação ou melhorar a segurança. <br><br>`],
+            titulo9: [`<b>História Antiga:</b> O boxe é um dos esportes mais antigos, com evidências de sua prática datando de cerca de 3000 a.C. na Mesopotâmia. Ele também era popular na Grécia Antiga, onde fazia parte dos Jogos Olímpicos antigos.`]
         },
         titleOlympics: ['', '', '', '', ''],
         textOlympics: {
@@ -63,11 +83,18 @@ const contentLanguages = {
             federation: ['English text about the boxing federation.'],
             brazil: ['English text about boxing in Brazil.'],
         },
-        titleAbout: ['ingreis', '', '', '', ''],
+        titleAbout: ['Purpose of the sport and characteristics of the space and material', '', '', '', ''],
         textAbout: {
-            titulo1: [``],
-            titulo2: [``],
-            titulo3: [``],
+            titulo1: [`In boxing, the main objective is to beat the opponent through regulated combat, using punching techniques. There are two main ways to win: <br> <br> 
+            <b>Knockout (KO):</b> When a fighter knocks his opponent down and he is unable to get up before the referee's count ends. <br> <br>
+            <b>Judges' Decision:</b> If the fight goes to the end of the established rounds, victory is decided by the judges based on the scoring of the blows, control of the ring and strategy. <br>`],
+            titulo2: [`<b>Boxing Ring:</b> The space where the fights take place is a square ring, generally measuring between 4.9 and 7.3 meters on each side. The ring is surrounded by ropes to ensure that the wrestlers remain within the designated area.`],
+            titulo3: [`<b>Materials:</b> <br>
+            <b>Boxing Gloves:</b> Used to protect fighters' hands and minimize the risk of injury to opponents. The gloves are padded and the size varies depending on the weight category and the specific rules of the fight. <br> <br>
+            <b>Mouthguard:</b> A protective device for the teeth and jaw that helps prevent tooth injuries and jaw fractures. <br> <br>`],
+            titulo4: [`<b>Body and Coquinho Protector:</b> For additional protection of vital organs and sensitive areas. It is common to wear a protective vest in practice, especially in training. <br> <br>
+            <b>Footwear:</b> Boxers wear lightweight, non-slip sneakers designed to provide good mobility and grip in the ring. <br> <br>
+            <b>Punching Bags and Training Equipment:</b> During training, boxers use punching bags, speed bags, and other equipment to improve technique and physical conditioning. <br>`],
         },
         titleOlympics: ['', '', '', '', ''],
         textOlympics: {
@@ -97,7 +124,7 @@ const contentLanguages = {
         titleAbout: ['Franceis', '', '', '', ''],
         textAbout: {
             titulo1: [``],
-            titulo2: [``],
+            titulo2: [`<b>Ring de boxe :</b> L'espace où se déroulent les combats est un ring carré, mesurant généralement entre 4,9 et 7,3 mètres de côté. Le ring est entouré de cordes pour garantir que les lutteurs restent dans la zone désignée.`],
             titulo3: [``],
         },
         titleOlympics: ['', '', '', '', ''],
@@ -169,7 +196,7 @@ function contentLanguage(language) {
     const historyTitles = document.querySelectorAll('.section-main .section-header .h1-history');
     const historyTexts = document.querySelectorAll('.section-main .section-content .p-history');
 
-    const historySections = ['titulo1', 'all', 'federation', 'brazil'];
+    const historySections = ['all', 'all', 'federation', 'brazil'];
     console.log('Total aboutTitle:', historyTitles.length);
     console.log(historyTitles)
     console.log('Total aboutText:', historyTexts.length);
@@ -201,7 +228,7 @@ function contentLanguage(language) {
     const aboutTitles = document.querySelectorAll('.section-main .section-header .h1-about');
     const aboutTexts = document.querySelectorAll('.section-main .section-content .p-about');
 
-    const aboutSections = ['titulo1', 'all', 'federation', 'brazil'];
+    const aboutSections = ['titulo1', 'titulo2', 'titulo3', 'titulo4', 'titulo5', 'titulo6', 'titulo7', 'titulo8', 'titulo9'];
     console.log('Total aboutTitle:', aboutTitles.length);
     console.log(aboutTitles)
     console.log('Total aboutText:', aboutTexts.length);
