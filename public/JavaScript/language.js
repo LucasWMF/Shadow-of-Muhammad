@@ -8,8 +8,7 @@ const contentLanguages = {
             'Introdução': ['O boxe olímpico é uma modalidade de combate que faz parte dos Jogos Olímpicos desde 1904 para homens e 2012 para mulheres. As lutas ocorrem em três rounds e os atletas utilizam luvas, capacete e protetor bucal. A vitória pode ser por nocaute, decisão dos juízes ou interrupção médica. As categorias são divididas por peso, e o foco é na técnica, rapidez e precisão dos golpes. O esporte promove fair play e possui regras rigorosas para a segurança dos lutadores.'],
             'História do Boxe e Federação': ['O boxe, originado na Grécia Antiga e incluído nos Jogos Olímpicos desde 688 a.C., ressurgiu na Inglaterra no século XVIII com as "Regras de Queensberry" (1867). Estreou nos Jogos Olímpicos modernos em 1904, com categorias femininas adicionadas em 2012. A Federação Internacional de Boxe Amador (FIBA), criada em 1920 e substituída pela AIBA em 1946, foi descredenciada pelo COI, mas o boxe ainda está presente nos Jogos. No Brasil, o boxe ganhou destaque no final do século XIX e com conquistas internacionais como a de Eder Jofre e Robson Conceição.'],
             'Modalidades e Regras': ['O boxe olímpico, ou amador, tem como objetivo vencer por pontos ou knockout (KO). A competição inclui 3 rounds de 3 minutos cada, com intervalos de 1 minuto. Os boxeadores usam luvas maiores (10-12 onças), capacete e protetor bucal. A pontuação é dada com base em golpes limpos e eficazes, com juízes ou sistemas eletrônicos. Faltas incluem golpes abaixo da cintura e comportamentos antidesportivos. O vencedor pode ser decidido por pontos ou desqualificação. As modalidades incluem pesos mosca, pena, leve, meio-médio, médio, pesado e superpesado, tanto para homens quanto para mulheres. O boxe feminino foi adicionado aos Jogos Olímpicos em 2012. A AIBA regula as regras, que podem variar em competições regionais e nacionais.'],
-            'Melhores Competidores': ['Texto sobre melhores competidores em Português'],
-            'Curiosidades e Benefícios': ['Texto sobre curiosidades e benefícios em Português']
+            'Curiosidades': ['Texto sobre curiosidades e benefícios em Português']
         },
         buttonMore: 'Ver Mais',
         pageList: ['Home', 'História', 'Sobre', 'Olímpiadas', 'Feedback'],
@@ -107,13 +106,14 @@ const contentLanguages = {
     English: {
         navbar: ['Home', 'Contents <i style="margin-left:1rem;" class="fa-solid fa-chevron-down arrow"></i>', 'Feedback'],
         dropnavbar: ['History', 'About', 'Olympics'],
-        title: ['Olympic Boxing Introduction', 'History of Boxing and Federation', 'Modalities and Rules', 'Best Competitors', 'Curiosities and Benefits', 'Feedback'],
+        title: ['Olympic Boxing Introduction', 'History of Boxing and Federation', 'Modalities and Rules', 'Curiosities', 'Feedback'],
         textSummary: {
-            'Introdução': ['Introduction text in English'],
-            'História do Boxe e Federação': ['Text about boxing history in English'],
-            'Modalidades e Regras': ['Text about modalities and rules in English'],
-            'Melhores Competidores': ['Text about best competitors in English'],
-            'Curiosities and Benefits': ['Text about curiosities and benefits in English']
+            'Introdução': ['Olympic boxing is a combat sport that has been part of the Olympic Games since 1904 for men and 2012 for women. Fights take place over three rounds and athletes wear gloves, helmets and mouth guards. Victory can be by knockout, judges decision or medical stoppage. The categories are divided by weight, and the focus is on technique, speed and precision of punches. The sport promotes fair play and has strict rules for the safety of fighters.'],
+
+            'História do Boxe e Federação': ["Boxing, which originated in Ancient Greece and has been included in the Olympic Games since 688 BC, resurfaced in England in the 18th century with the 'Queensberry Rules' (1867). It debuted at the modern Olympic Games in 1904, with women's categories added in 2012. The International Amateur Boxing Federation (FIBA), created in 1920 and replaced by the AIBA in 1946, was disqualified by the IOC, but boxing is still present at the Games. In Brazil, boxing gained prominence in the late 19th century with international achievements such as those of Eder Jofre and Robson Conceição."],
+
+            'Modalidades': ['Text about modalities and rules in English'],
+            'Curiosities': ['Text about curiosities and benefits in English']
         },
         buttonMore: 'Read More',
         titleHistory: ['History of Boxing', 'Federation of Boxing', 'Boxing in Brazil'],
@@ -246,7 +246,7 @@ const contentLanguages = {
                 <b>La boxe au cinéma :</b> la boxe est depuis longtemps un thème populaire au cinéma, avec des films emblématiques tels que "Rocky" (1976), qui raconte l'histoire d'un boxeur amateur qui obtient une chance de remporter le titre mondial. Le succès du film a donné lieu à un certain nombre de suites et de spin-offs, notamment la série "Creed".`]
 
         },
-        titleOlympics: ['BOXE OLYMPIQUE', 'CLASSEMENT', 'Jeux Olympiques de Pékin 2008', 'Jeux Olympiques de Londres 2012'],
+        titleOlympics: ['BOXE OLYMPIQUE', 'CLASSEMENT', 'Jeux Olympiques de Pékin 2008', 'Jeux Olympiques de Londres 2012', 'Jeux olympiques de Rio 2016', 'Jeux olympiques de Tokyo 2020 (organisés en 2021)', "Jeux olympiques de Pékin 2022 (Jeux d'hiver, la boxe ne fait pas partie des Jeux d'hiver)"],
         textOlympics: {
             titulo1: [`La boxe olympique est un sport de combat qui fait partie des Jeux Olympiques depuis 1904 pour les hommes et 2012 pour les femmes. Les combats se déroulent sur trois rounds et les athlètes portent des gants, des casques et des protège-dents. La victoire peut se faire par KO, par décision des juges ou par arrêt médical. Les catégories sont divisées selon le poids et l'accent est mis sur la technique, la vitesse et la précision des coups. Le sport promeut le fair-play et impose des règles strictes pour la sécurité des combattants.`],
             titulo2: [`
