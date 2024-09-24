@@ -215,37 +215,37 @@ const contentLanguages = {
             titulo1: [`En boxe, l'objectif principal est de vaincre l'adversaire au moyen d'un combat réglé, en utilisant des techniques de frappe. Il existe deux manières principales de gagner : <br> <br>
                 <b>KO (Knockout) :</b> Lorsqu'un combattant met son adversaire à terre et qu'il est incapable de se relever avant la fin du décompte de l'arbitre. <br> <br>
                 <b>Décision des juges :</b> Si le combat se poursuit jusqu'à la fin des rounds établis, la victoire est décidée par les juges en fonction du décompte des coups, du contrôle du ring et de la stratégie. <br>`],
-                titulo2: [`<b>Ring de boxe :</b> L'espace où se déroulent les combats est un ring carré, mesurant généralement entre 4,9 et 7,3 mètres de côté. Le ring est entouré de cordes pour garantir que les lutteurs restent dans la zone désignée.`],
-                titulo3: [`<b>Matériaux :</b> <br>
+            titulo2: [`<b>Ring de boxe :</b> L'espace où se déroulent les combats est un ring carré, mesurant généralement entre 4,9 et 7,3 mètres de côté. Le ring est entouré de cordes pour garantir que les lutteurs restent dans la zone désignée.`],
+            titulo3: [`<b>Matériaux :</b> <br>
                 <b>Gants de boxe :</b> Utilisés pour protéger les mains des combattants et minimiser le risque de blessure des adversaires. Les gants sont rembourrés et la taille varie en fonction de la catégorie de poids et des règles spécifiques du combat. <br> <br>
                 <b>Protège-dents :</b> Un dispositif de protection pour les dents et la mâchoire qui aide à prévenir les blessures aux dents et les fractures de la mâchoire. <br> <br>`],
-                titulo4: [`<b>Protecteur du corps et du coquin :</b> Pour une protection supplémentaire des organes vitaux et des zones sensibles. Il est courant de porter un gilet de protection à l'entraînement, en particulier à l'entraînement. <br> <br>
+            titulo4: [`<b>Protecteur du corps et du coquin :</b> Pour une protection supplémentaire des organes vitaux et des zones sensibles. Il est courant de porter un gilet de protection à l'entraînement, en particulier à l'entraînement. <br> <br>
                 <b>Chaussures :</b> Les boxeurs portent des baskets légères et antidérapantes conçues pour offrir une bonne mobilité et une bonne adhérence sur le ring. <br> <br>
                 <b>Sacs de frappe et équipement d'entraînement :</b> Pendant l'entraînement, les boxeurs utilisent des sacs de frappe, des sacs de vitesse et d'autres équipements pour améliorer leur technique et leur condition physique. <br>`],
-                titulo5 : [`La boxe olympique, également connue sous le nom de boxe amateur, a des règles spécifiques qui garantissent la sécurité des compétiteurs et l'équité de la compétition. Voici les principales règles et modalités associées à la boxe olympique : <br><br>
+            titulo5: [`La boxe olympique, également connue sous le nom de boxe amateur, a des règles spécifiques qui garantissent la sécurité des compétiteurs et l'équité de la compétition. Voici les principales règles et modalités associées à la boxe olympique : <br><br>
                 <b>Objectif :</b> L'objectif est de gagner le combat en portant des coups propres et efficaces ou, dans certains cas, par KO (coup de grâce). <br><br>
                 <b>Compétition olympique :</b> Généralement 3 rounds de 3 minutes chacun, avec une pause d'une minute entre eux. <br> <br>`],
-                titulo6 : [`<b>Score :</b> Basé sur des coups propres et efficaces. Le système de notation peut varier, mais traditionnellement, les juges notent en fonction de la clarté et de l'impact des coups. Dans les compétitions plus récentes, le décompte est effectué sur la base d'un système électronique ou numérique, où chaque coup valide est enregistré par un panel de juges. <br><br>
+            titulo6: [`<b>Score :</b> Basé sur des coups propres et efficaces. Le système de notation peut varier, mais traditionnellement, les juges notent en fonction de la clarté et de l'impact des coups. Dans les compétitions plus récentes, le décompte est effectué sur la base d'un système électronique ou numérique, où chaque coup valide est enregistré par un panel de juges. <br><br>
                 <b>Fautes et pénalités :</b> Les coups de poing sous la taille, à l'arrière de la tête ou à l'arrière de la tête sont interdits. Les agressions antisportives, comme les coups de poing après l'ordre « stop », peuvent entraîner des pénalités ou une disqualification. <br><br>
                 <b>Vainqueur :</b> Le boxeur ayant le plus de points à la fin des 3 rounds est déclaré vainqueur. <br> Un boxeur peut gagner par disqualification si l'adversaire commet des fautes graves ou répétées.`],
-                titulo7: [`<b>Catégories de poids :</b> <br><br>
+            titulo7: [`<b>Catégories de poids :</b> <br><br>
                 <b>Hommes et femmes :</b> Il existe différentes catégories de poids, allant des poids légers aux poids lourds. Les catégories peuvent varier légèrement entre les compétitions internationales et régionales. <br><br>
                 <b>Divisions :</b> Les catégories de poids sont définies de manière à ce que les concurrents soient de taille similaire, ce qui minimise l'avantage de poids.`],
-                titulo8 : [`<b>Boxe féminine :</b> <br><br>
+            titulo8: [`<b>Boxe féminine :</b> <br><br>
                 <b>Similitude avec la boxe masculine :</b> Elle suit les mêmes règles générales que la boxe olympique masculine, avec des catégories de poids spécifiques pour les femmes.<br><br>
                 <b>Inclusion olympique :</b> La boxe féminine a été incluse aux Jeux olympiques en 2012 et suit depuis les mêmes directives et règles que la boxe masculine.`],
-                titulo9 : [`<b>Variations des règles :</b> <br><br>
+            titulo9: [`<b>Variations des règles :</b> <br><br>
                 <b>AIBA :</b> La Fédération internationale de boxe (AIBA) réglemente la boxe olympique et ses règles peuvent être ajustées de temps à autre pour mettre à jour le système de notation ou améliorer la sécurité.`],
-                titulo10 : [`<b>Histoire ancienne :</b> La boxe est l'un des sports les plus anciens, avec des preuves de sa pratique remontant à environ 3000 av. J.-C. en Mésopotamie. Elle était également populaire dans la Grèce antique, où elle faisait partie des anciens Jeux olympiques. <br><br>
+            titulo10: [`<b>Histoire ancienne :</b> La boxe est l'un des sports les plus anciens, avec des preuves de sa pratique remontant à environ 3000 av. J.-C. en Mésopotamie. Elle était également populaire dans la Grèce antique, où elle faisait partie des anciens Jeux olympiques. <br><br>
                 <b>Gants de boxe :</b> À l'origine, les boxeurs combattaient sans gants, utilisant uniquement des bandages sur leurs mains. Les gants ont été introduits à la fois pour protéger les combattants et pour éviter les blessures graves.`],
-                titulo11: [`<b>Le plus grand KO de l'histoire :</b> le record du temps le plus long entre un coup et le décompte final d'un KO est détenu par Jack Dempsey, qui a mis KO Jess Willard au premier round d'un combat en 1919. Dempsey était célèbre pour sa puissance de frappe. <br><br>
+            titulo11: [`<b>Le plus grand KO de l'histoire :</b> le record du temps le plus long entre un coup et le décompte final d'un KO est détenu par Jack Dempsey, qui a mis KO Jess Willard au premier round d'un combat en 1919. Dempsey était célèbre pour sa puissance de frappe. <br><br>
                 <b>La boxe au cinéma :</b> la boxe est depuis longtemps un thème populaire au cinéma, avec des films emblématiques tels que "Rocky" (1976), qui raconte l'histoire d'un boxeur amateur qui obtient une chance de remporter le titre mondial. Le succès du film a donné lieu à un certain nombre de suites et de spin-offs, notamment la série "Creed".`]
-                
+
         },
         titleOlympics: ['BOXE OLYMPIQUE', 'CLASSEMENT', 'Jeux Olympiques de Pékin 2008', 'Jeux Olympiques de Londres 2012'],
         textOlympics: {
-            titulo1 : [`La boxe olympique est un sport de combat qui fait partie des Jeux Olympiques depuis 1904 pour les hommes et 2012 pour les femmes. Les combats se déroulent sur trois rounds et les athlètes portent des gants, des casques et des protège-dents. La victoire peut se faire par KO, par décision des juges ou par arrêt médical. Les catégories sont divisées selon le poids et l'accent est mis sur la technique, la vitesse et la précision des coups. Le sport promeut le fair-play et impose des règles strictes pour la sécurité des combattants.`],
-            titulo2 : [`
+            titulo1: [`La boxe olympique est un sport de combat qui fait partie des Jeux Olympiques depuis 1904 pour les hommes et 2012 pour les femmes. Les combats se déroulent sur trois rounds et les athlètes portent des gants, des casques et des protège-dents. La victoire peut se faire par KO, par décision des juges ou par arrêt médical. Les catégories sont divisées selon le poids et l'accent est mis sur la technique, la vitesse et la précision des coups. Le sport promeut le fair-play et impose des règles strictes pour la sécurité des combattants.`],
+            titulo2: [`
             <ol>
                 <li> <b>Cuba :</b> 9 médailles (3 d'or, 4 d'argent, 2 de bronze)</li>
                 <li> <b>États-Unis :</b> 8 médailles (2 d'or, 2 d'argent, 4 de bronze)</li>
@@ -253,7 +253,7 @@ const contentLanguages = {
                 <li> <b>Ukraine :</b> 4 médailles (1 d'or, 1 d'argent, 2 de bronze)</li>
                 <li> <b>Turquie :</b> 3 médailles (1 d'or, 1 d'argent, 1 de bronze)</li>
             </ol>`],
-            titulo3 : [`
+            titulo3: [`
             <ol>
                 <li> <b>Cuba :</b> 7 médailles (3 d'or, 3 d'argent, 1 de bronze)</li>
                 <li> <b>Grande-Bretagne :</b> 7 médailles (3 d'or, 1 d'argent, 3 de bronze)</li>
@@ -261,7 +261,7 @@ const contentLanguages = {
                 <li> <b>Ouzbékistan :</b> 5 médailles (2 d'or, 1 d'argent, 2 de bronze)</li>
                 <li> <b>Azerbaïdjan :</b> 5 médailles (2 d'or, 1 d'argent, 2 de bronze)</li>
             </ol>`],
-            titulo4 : [`
+            titulo4: [`
             <ol>
                 <li> <b>Cuba :</b> 7 médailles (4 d'or, 2 d'argent, 1 de bronze)</li>
                 <li> <b>États-Unis :</b> 6 médailles (1 d'or, 3 d'argent, 2 de bronze)</li>
@@ -269,7 +269,7 @@ const contentLanguages = {
                 <li> <b>Ouzbékistan :</b> 4 médailles (2 d'or, 1 d'argent, 1 de bronze) </li>
                 <li> <b>Chine :</b> 4 médailles (1 d'or, 2 d'argent, 1 de bronze) </li>
             </ol>`],
-            titulo5 : [`
+            titulo5: [`
             <ol>
                 <li> <b>Cuba :</b> 6 médailles (4 d'or, 2 d'argent) </li>
                 <li> <b>États-Unis :</b> 6 médailles (1 d'or, 3 d'argent, 2 de bronze) </li>
@@ -277,8 +277,13 @@ const contentLanguages = {
                 <li> <b>Grande-Bretagne :</b> 4 médailles (1 d'or, 2 d'argent, 1 de bronze) </li>
                 <li> <b>Philippines :</b> 2 médailles (1 d'or, 1 d'argent)</li>
             </ol>`],
+<<<<<<< Updated upstream
             titulo6 : [`
             Il n'y aura pas de Jeux olympiques d'été en 2022, car la compétition de boxe fait partie des Jeux olympiques d'été, organisés tous les quatre ans. <br> Ces classements reflètent les performances des pays en boxe lors des Jeux olympiques d'été de 2008 à 2020. La liste peut varier légèrement en fonction de la source et du moment des résultats.`]
+=======
+            titulo6: [`
+            Il n'y aura pas de Jeux olympiques d'été en 2022, car la compétition de boxe fait partie des Jeux olympiques d'été, organisés tous les quatre ans. <br> Ces classements reflètent les performances des pays en boxe lors des Jeux olympiques d'été de 2008 à 2020. La liste peut varier légèrement en fonction de la source et du moment des résultats.`],
+>>>>>>> Stashed changes
         }
     }
 };
@@ -335,10 +340,10 @@ function contentLanguage(language) {
     const historyTexts = document.querySelectorAll('.section-main .section-content .p-history');
     const historySections = ['all', 'all', 'federation', 'brazil'];
 
-    console.log('Total aboutTitle:', historyTitles.length);
-    console.log(historyTitles)
-    console.log('Total aboutText:', historyTexts.length);
-    console.log(historyTexts)
+    // console.log('Total aboutTitle:', historyTitles.length);
+    // console.log(historyTitles)
+    // console.log('Total aboutText:', historyTexts.length);
+    // console.log(historyTexts)
 
     // Loop para atualizar títulos e textos das seções de História
     for (let i = 0; i < historySections.length; i++) {
@@ -367,10 +372,10 @@ function contentLanguage(language) {
     const aboutTexts = document.querySelectorAll('.section-main .section-content .p-about');
 
     const aboutSections = ['titulo1', 'titulo2', 'titulo3', 'titulo4', 'titulo5', 'titulo6', 'titulo7', 'titulo8', 'titulo9', 'titulo10', 'titulo11'];
-    console.log('Total aboutTitle:', aboutTitles.length);
-    console.log(aboutTitles)
-    console.log('Total aboutText:', aboutTexts.length);
-    console.log(aboutTexts)
+    // console.log('Total aboutTitle:', aboutTitles.length);
+    // console.log(aboutTitles)
+    // console.log('Total aboutText:', aboutTexts.length);
+    // console.log(aboutTexts)
 
     // Loop para atualizar títulos e textos das seções de História
     for (let i = 0; i < aboutSections.length; i++) {
@@ -382,7 +387,7 @@ function contentLanguage(language) {
 
         if (aboutTexts[i]) {
             // Atualiza texto dependendo da classe do elemento
-            aboutTexts[i].innerHTML = contentLanguages[language].textAbout[sectionKey][0] || ''; // Atualiza texto baseado na chave da seção
+            aboutTexts[i].innerHTML = contentLanguages[language].textAbout[sectionKey][i] || ''; // Atualiza texto baseado na chave da seção
             // console.log(sectionKey)
         }
     }
@@ -393,10 +398,10 @@ function contentLanguage(language) {
     const footerLinks = document.querySelectorAll('.list-pages a');
     const footerCopy = document.querySelectorAll('.text-copy p');
 
-    console.log(footerTitles);
-    console.log(footerTexts);
-    console.log(footerLinks);
-    console.log(footerCopy);
+    // console.log(footerTitles);
+    // console.log(footerTexts);
+    // console.log(footerLinks);
+    // console.log(footerCopy);
 
     const footerTitlesKeys = ['sobre', 'redes_sociais', 'abas'];
 
@@ -429,24 +434,24 @@ function contentLanguage(language) {
     }
 
     const olympicsTitles = document.querySelectorAll('.section-main .section-header .h1-olympics');
+    const olympicsSubTitles = document.querySelectorAll('.section-main .section-header .h2-olympics');
     const olympicsTexts = document.querySelectorAll('.section-main .section-content .p-olympics');
 
     const olympicsSections = ['titulo1', 'titulo2', 'titulo3', 'titulo4', 'titulo5', 'titulo6'];
     console.log('Total olympicsTitle:', olympicsTitles.length);
-    console.log(olympicsTitles)
+    console.log(olympicsTitles);
     console.log('Total olympicsText:', olympicsTexts.length);
-    console.log(olympicsTexts)
+    console.log(olympicsTexts);
 
     for (let i = 0; i < olympicsSections.length; i++) {
         const sectionKey = olympicsSections[i];
 
         if (olympicsTitles[i]) {
-            olympicsTitles[i].innerHTML = contentLanguages[language].titleOlympics[i] || ''; // Atualiza título da seção de História
+            olympicsTitles[i].innerHTML = contentLanguages[language].titleOlympics[i] || '';
         }
 
         if (olympicsTexts[i]) {
-            olympicsTexts[i].innerHTML = contentLanguages[language].textOlympics[sectionKey][0] || ''; // Atualiza texto baseado na chave da seção
-            console.log(sectionKey)
+            olympicsTexts[i].innerHTML = contentLanguages[language].textOlympics[sectionKey][0] || '';
         }
     }
 }
