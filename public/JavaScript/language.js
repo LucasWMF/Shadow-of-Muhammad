@@ -102,16 +102,16 @@ const contentLanguages = {
         footerTexts: ['Nossa escola online ensina as regras e modalidades do boxe olímpico, oferecendo conhecimento e treino para iniciantes e entusiastas.'],
         footerLinks: ['HOME', 'HISTÓRIA', 'SOBRE', 'OLÍMPIADAS', 'FEEDBACK'],
         footerCopy: ['Copyright (c) 2024 Shadow Of Muhammad Todos os direitos reservados Este produto é protegido por direitos autorais e distribuído sob licenças que restringem cópia, distribuição e descompilação.'],
+        indice: ['Índice'],
     },
     English: {
         navbar: ['Home', 'Contents <i style="margin-left:1rem;" class="fa-solid fa-chevron-down arrow"></i>', 'Feedback'],
         dropnavbar: ['History', 'About', 'Olympics'],
         title: ['Introduction to Olympic Boxing', 'History of Boxing and Federation', 'Modalities and Rules'],
         textSummary: {
-            'Introduction': [`Olympic boxing is a combat sport that has been part of the Olympic Games since 1904 for men and 2012 for women. The fights occur in three rounds, and athletes wear gloves, helmets, and mouthguards. Victory can be by knockout, judges' decision, or medical stoppage. The categories are divided by weight, focusing on technique, speed, and precision of blows. The sport promotes fair play and has strict rules for the safety of the fighters.`],
-            'History of Boxing and Federation': ['Boxing, originated in Ancient Greece and included in the Olympic Games since 688 BC, resurfaced in England in the 18th century with the "Queensberry Rules" (1867). It debuted in the modern Olympic Games in 1904, with female categories added in 2012. The International Boxing Federation (FIBA), created in 1920 and replaced by the AIBA in 1946, was discredited by the IOC, but boxing remains present in the Games. In Brazil, boxing gained prominence at the end of the 19th century with international achievements from fighters like Eder Jofre and Robson Conceição.'],
-            'Modalities and Rules': ['Olympic boxing, or amateur boxing, aims to win by points or knockout (KO). The competition includes 3 rounds of 3 minutes each, with 1-minute breaks. Boxers use larger gloves (10-12 ounces), helmets, and mouthguards. Scoring is based on clean and effective punches, judged by referees or electronic systems. Fouls include punches below the belt and unsportsmanlike behavior. The winner may be decided by points or disqualification. The modalities include fly, feather, lightweight, welterweight, middleweight, heavyweight, and super heavyweight, for both men and women. Women\'s boxing was added to the Olympic Games in 2012. The AIBA regulates the rules, which may vary in regional and national competitions.'],
-            'Curiosities': ['Text about curiosities and benefits in English']
+            'Introdução': [`Olympic boxing is a combat sport that has been part of the Olympic Games since 1904 for men and 2012 for women. The fights occur in three rounds, and athletes wear gloves, helmets, and mouthguards. Victory can be by knockout, judges' decision, or medical stoppage. The categories are divided by weight, focusing on technique, speed, and precision of blows. The sport promotes fair play and has strict rules for the safety of the fighters.`],
+            'História do Boxe e Federação': ['Boxing, originated in Ancient Greece and included in the Olympic Games since 688 BC, resurfaced in England in the 18th century with the "Queensberry Rules" (1867). It debuted in the modern Olympic Games in 1904, with female categories added in 2012. The International Boxing Federation (FIBA), created in 1920 and replaced by the AIBA in 1946, was discredited by the IOC, but boxing remains present in the Games. In Brazil, boxing gained prominence at the end of the 19th century with international achievements from fighters like Eder Jofre and Robson Conceição.'],
+            'Modalidades e Regras': ['Olympic boxing, or amateur boxing, aims to win by points or knockout (KO). The competition includes 3 rounds of 3 minutes each, with 1-minute breaks. Boxers use larger gloves (10-12 ounces), helmets, and mouthguards. Scoring is based on clean and effective punches, judged by referees or electronic systems. Fouls include punches below the belt and unsportsmanlike behavior. The winner may be decided by points or disqualification. The modalities include fly, feather, lightweight, welterweight, middleweight, heavyweight, and super heavyweight, for both men and women. Women\'s boxing was added to the Olympic Games in 2012. The AIBA regulates the rules, which may vary in regional and national competitions.'],
         },
         buttonMore: 'See More',
         pageList: ['Home', 'History', 'About', 'Olympics', 'Feedback'],
@@ -204,21 +204,22 @@ const contentLanguages = {
                 <li> <b>Philippines:</b> 2 medals (1 gold, 1 silver)</li>
             </ol>`],
             titulo6: [`
-            There are no Summer Olympics in 2022, as the boxing competition is part of the Summer Olympics, held every four years. <br> These rankings reflect countries' performance in boxing during the 2008 to 2020 Summer Olympics. The list may vary slightly depending on the source and the timeliness of the results.`]
+            There are no Summer Olympics in 2022, as the boxing competition is part of the Summer Olympics, held every four years. <br> These rankings reflect countries' performance in boxing during the 2008 to 2020 Summer Olympics. The list may vary slightly depending on the source and the timeliness of the results.`],
         },
         footerTitles: ['ABOUT THE SITE', 'SOCIAL NETWORKS', 'TABS'],
         footerTexts: ['Our online school teaches the rules and modalities of Olympic boxing, offering knowledge and training for beginners and enthusiasts.'],
         footerLinks: ['HOME', 'HISTORY', 'ABOUT', 'OLYMPICS', 'FEEDBACK'],
         footerCopy: ['Copyright (c) 2024 Shadow Of Muhammad. All rights reserved. This product is protected by copyright and distributed under licenses that restrict copying, distribution, and decompilation.'],
+        indice: ['Index'],
     },
     Français: {
         navbar: ['Accueil', 'Contenus <i style="margin-left:1rem;" class="fa-solid fa-chevron-down arrow"></i>', 'Retour d\'information'],
         dropnavbar: ['Histoire', 'À propos', 'Olympiques'],
         title: ['Introduction à la boxe olympique', 'Histoire de la boxe et de la fédération', 'Modalités et règles'],
         textSummary: {
-            'Introduction': ['La boxe olympique est un sport de combat qui fait partie des Jeux Olympiques depuis 1904 pour les hommes et 2012 pour les femmes. Les combats se déroulent en trois rounds, et les athlètes portent des gants, des casques et des protège-dents. La victoire peut se faire par knockout, décision des juges, ou arrêt médical. Les catégories sont divisées par poids, mettant l’accent sur la technique, la vitesse et la précision des coups. Le sport promeut le fair-play et a des règles strictes pour la sécurité des combattants.'],
-            'Histoire de la boxe et de la fédération': [`La boxe, originaire de la Grèce antique et incluse dans les Jeux Olympiques depuis 688 av. J.-C., a refait surface en Angleterre au XVIIIe siècle avec les "Queensberry Rules" (1867). Elle a fait ses débuts dans les Jeux Olympiques modernes en 1904, avec des catégories féminines ajoutées en 2012. La Fédération Internationale de Boxe Amateur (FIBA), créée en 1920 et remplacée par l’AIBA en 1946, a été discréditée par le CIO, mais la boxe reste présente dans les Jeux. Au Brésil, la boxe a pris de l'ampleur à la fin du XIXe siècle avec les réalisations internationales de boxeurs comme Eder Jofre et Robson Conceição.`],
-            'Modalités et règles': [`La boxe olympique, ou boxe amateur, vise à gagner par points ou knockout (KO). La compétition comprend 3 rounds de 3 minutes chacun, avec des pauses d’une minute. Les boxeurs utilisent des gants plus grands (10-12 onces), des casques et des protège-dents. Le scoring est basé sur des coups propres et efficaces, jugés par des arbitres ou des systèmes électroniques. Les fautes comprennent des coups sous la ceinture et un comportement antisportif. Le gagnant peut être décidé par points ou disqualification. Les modalités comprennent les poids mouches, plumes, légers, welters, moyens, lourds et super lourds, pour les hommes et les femmes. La boxe féminine a été ajoutée aux Jeux Olympiques en 2012. L’AIBA régule les règles, qui peuvent varier dans les compétitions régionales et nationales.'],
+            'Introdução': ['La boxe olympique est un sport de combat qui fait partie des Jeux Olympiques depuis 1904 pour les hommes et 2012 pour les femmes. Les combats se déroulent en trois rounds, et les athlètes portent des gants, des casques et des protège-dents. La victoire peut se faire par knockout, décision des juges, ou arrêt médical. Les catégories sont divisées par poids, mettant l’accent sur la technique, la vitesse et la précision des coups. Le sport promeut le fair-play et a des règles strictes pour la sécurité des combattants.'],
+            'História do Boxe e Federação': [`La boxe, originaire de la Grèce antique et incluse dans les Jeux Olympiques depuis 688 av. J.-C., a refait surface en Angleterre au XVIIIe siècle avec les "Queensberry Rules" (1867). Elle a fait ses débuts dans les Jeux Olympiques modernes en 1904, avec des catégories féminines ajoutées en 2012. La Fédération Internationale de Boxe Amateur (FIBA), créée en 1920 et remplacée par l’AIBA en 1946, a été discréditée par le CIO, mais la boxe reste présente dans les Jeux. Au Brésil, la boxe a pris de l'ampleur à la fin du XIXe siècle avec les réalisations internationales de boxeurs comme Eder Jofre et Robson Conceição.`],
+            'Modalidades e Regras': [`La boxe olympique, ou boxe amateur, vise à gagner par points ou knockout (KO). La compétition comprend 3 rounds de 3 minutes chacun, avec des pauses d’une minute. Les boxeurs utilisent des gants plus grands (10-12 onces), des casques et des protège-dents. Le scoring est basé sur des coups propres et efficaces, jugés par des arbitres ou des systèmes électroniques. Les fautes comprennent des coups sous la ceinture et un comportement antisportif. Le gagnant peut être décidé par points ou disqualification. Les modalités comprennent les poids mouches, plumes, légers, welters, moyens, lourds et super lourds, pour les hommes et les femmes. La boxe féminine a été ajoutée aux Jeux Olympiques en 2012. L’AIBA régule les règles, qui peuvent varier dans les compétitions régionales et nationales.'],
             'Curiosités': ['Texte sur les curiosités et les bénéfices en français`]
         },
         buttonMore: 'Voir plus',
@@ -241,22 +242,22 @@ const contentLanguages = {
         },
         titleAbout: ['Objectif du sport et caractéristiques de l’espace et du matériel', 'Règles et modalités', 'Modalités et spécificités en boxe olympique', 'Curiosités'],
         textAbout: {
-            title1: [`En boxe, l’objectif principal est de vaincre l’adversaire par un combat réglementé, en utilisant des techniques de frappe. Il existe deux manières principales de gagner : <br> <br>
+            titulo1: [`En boxe, l’objectif principal est de vaincre l’adversaire par un combat réglementé, en utilisant des techniques de frappe. Il existe deux manières principales de gagner : <br> <br>
             <b> Knockout (KO) : </b> Lorsqu’un combattant met l’adversaire au sol et qu’il ne peut pas se relever avant la fin du compte du juge. <br> <br>
             <b> Décision des juges : </b> Si le combat se termine jusqu'à la fin des rounds établis, la victoire est décidée par les juges sur la base des coups marqués, du contrôle du ring et de la stratégie.`],
-            title2: [`<b>Ring de boxe :</b> L'espace où se déroulent les combats est un ring carré, mesurant généralement entre 4,9 et 7,3 mètres de chaque côté. Le ring est entouré de cordes pour s'assurer que les combattants restent dans la zone désignée.`],
-            title3: [`<b>Matériaux :</b> <br>
+            titulo2: [`<b>Ring de boxe :</b> L'espace où se déroulent les combats est un ring carré, mesurant généralement entre 4,9 et 7,3 mètres de chaque côté. Le ring est entouré de cordes pour s'assurer que les combattants restent dans la zone désignée.`],
+            titulo3: [`<b>Matériaux :</b> <br>
             <b>Gants de boxe :</b> Utilisés pour protéger les mains des combattants et minimiser le risque de blessure pour les adversaires. Les gants sont rembourrés, et la taille varie de 10 à 12 onces selon la catégorie de poids. <br> <br>
             <b>Casque :</b> Obligatoire pour les boxeurs féminins et conseillé pour les boxeurs masculins, le casque protège la tête des impacts. <br> <br>
             <b>Protège-dents :</b> Équipement essentiel pour éviter les blessures dentaires et buccales. <br> <br>
             <b>Vêtements :</b> Les boxeurs portent généralement des shorts, des chaussures de boxe et un maillot, garantissant la liberté de mouvement pendant le combat.`],
-            title4: [`La boxe olympique se compose de plusieurs modalités, qui se distinguent par les caractéristiques des compétitions et des règles. Les modalités sont les suivantes : <br>
+            titulo4: [`La boxe olympique se compose de plusieurs modalités, qui se distinguent par les caractéristiques des compétitions et des règles. Les modalités sont les suivantes : <br>
             <b>Boxe masculine :</b> Inclus tous les catégories de poids, il se concentre sur des techniques variées et le développement de la force. <br>
             <b>Boxe féminine :</b> Comme la boxe masculine, mais avec des règles et un équipement spécifiques, comme le casque. <br>
             <b>Boxe des jeunes :</b> Destinée aux boxeurs âgés de 17 à 18 ans, cette modalité favorise le développement des jeunes talents dans le sport. <br>
             <b>Boxe des vétérans :</b> Compétitions réservées aux boxeurs de plus de 35 ans, cette modalité valorise l'expérience et la technique. <br>
             <b>Boxe scolaire :</b> Encouragée dans les écoles pour promouvoir la discipline et la santé des jeunes.`],
-            title5: [`La boxe olympique, également connue sous le nom de boxe amateur, a des règles spécifiques qui garantissent la sécurité des compétiteurs et l'équité de la compétition. Voici les principales règles et modalités associées à la boxe olympique : <br><br>
+            titulo5: [`La boxe olympique, également connue sous le nom de boxe amateur, a des règles spécifiques qui garantissent la sécurité des compétiteurs et l'équité de la compétition. Voici les principales règles et modalités associées à la boxe olympique : <br><br>
                 <b>Objectif :</b> L'objectif est de gagner le combat en portant des coups propres et efficaces ou, dans certains cas, par KO (coup de grâce). <br><br>
                 <b>Compétition olympique :</b> Généralement 3 rounds de 3 minutes chacun, avec une pause d'une minute entre eux. <br> <br>`],
             titulo6: [`<b>Score :</b> Basé sur des coups propres et efficaces. Le système de notation peut varier, mais traditionnellement, les juges notent en fonction de la clarté et de l'impact des coups. Dans les compétitions plus récentes, le décompte est effectué sur la base d'un système électronique ou numérique, où chaque coup valide est enregistré par un panel de juges. <br><br>
@@ -320,8 +321,9 @@ const contentLanguages = {
         footerTexts: ['Notre école en ligne enseigne les règles et modalités de la boxe olympique, offrant des connaissances et des entraînements pour les débutants et les passionnés.'],
         footerLinks: ['ACCUEIL', 'HISTOIRE', 'À PROPOS', 'OLYMPIADES', 'RETROUVER'],
         footerCopy: ['Droits d\'auteur (c) 2024 Shadow Of Muhammad. Tous les droits sont réservés. Ce produit est protégé par des droits d\'auteur et distribué sous des licences qui restreignent la copie, la distribution et la décompilation.'],
+        indice: ['Indice'],
     }
-};
+}
 
 // Função que atualiza o conteúdo da página com base no idioma escolhido
 function contentLanguage(language) {
@@ -407,33 +409,31 @@ function contentLanguage(language) {
     const aboutTexts = document.querySelectorAll('.section-main .section-content .p-about');
 
     const aboutSections = ['titulo1', 'titulo2', 'titulo3', 'titulo4', 'titulo5', 'titulo6', 'titulo7', 'titulo8', 'titulo9', 'titulo10', 'titulo11'];
-    console.log('Total aboutTitle:', aboutTitles.length);
-    console.log(aboutTitles);
-    console.log('Total aboutText:', aboutTexts.length);
-    console.log(aboutTexts);
+    // console.log('Total aboutTitle:', aboutTitles.length);
+    // console.log(aboutTitles);
+    // console.log('Total aboutText:', aboutTexts.length);
+    // console.log(aboutTexts);
 
-    // Loop para atualizar títulos e textos das seções de História
-    for (let i = 0; i < aboutSections.length; i++) {
+    for (let i = 0; i <= aboutSections.length; i++) {
         const sectionKey = aboutSections[i];
 
         if (aboutTitles[i]) {
-            aboutTitles[i].innerHTML = contentLanguages[language].titleAbout[i] || ''; // Atualiza título da seção de História
+            aboutTitles[i].innerHTML = contentLanguages[language].titleAbout[i] || '';
         } else {
-            console.error(`Título não encontrado para o índice: ${i}`);
+            // console.error(`Título não encontrado para o índice: ${i}`);
         }
 
         if (aboutTexts[i]) {
-            // Verifique se sectionKey existe e se o texto está definido
             if (contentLanguages[language].textAbout[sectionKey]) {
-                aboutTexts[i].innerHTML = contentLanguages[language].textAbout[sectionKey][i] || ''; // Atualiza texto baseado na chave da seção
+                aboutTexts[i].innerHTML = contentLanguages[language].textAbout[sectionKey] || '';
             } else {
-                console.error(`Chave de seção não encontrada: ${sectionKey}`);
+                // console.error(`Chave de seção não encontrada: ${sectionKey}`);
             }
         } else {
-            console.error(`Texto não encontrado para o índice: ${i}`);
+            // console.error(`Texto não encontrado para o índice: ${i}`);
         }
     }
-        // Atualiza os textos do rodapé
+    // Atualiza os textos do rodapé
     const footerTitles = document.querySelectorAll('h1.title-footer');
     const footerTexts = document.querySelectorAll('.footer-text');
     const footerLinks = document.querySelectorAll('.list-pages a');
@@ -483,7 +483,7 @@ function contentLanguage(language) {
     // console.log('Total olympicsText:', olympicsTexts.length);
     // console.log(olympicsTexts);
 
-    for (let i = 0; i < olympicsSections.length; i++) {
+    for (let i = 0; i <= olympicsSections.length; i++) {
         const sectionKey = olympicsSections[i];
 
         if (olympicsTitles[i]) {
@@ -493,6 +493,22 @@ function contentLanguage(language) {
         if (olympicsTexts[i]) {
             olympicsTexts[i].innerHTML = contentLanguages[language].textOlympics[sectionKey][0] || '';
         }
+    }
+
+    const h1Indice = document.querySelector('h1.h1-indice');
+    h1Indice.innerText = contentLanguages[language].indice || '';
+
+    // Tradução dos itens do índice de história
+    const historyItems = document.querySelectorAll('.indice-history');
+    const aboutItems = document.querySelectorAll('.indice-about');
+    console.log(h1Indice)
+    console.log(historyItems)
+
+    for (let i = 0; i < historyItems.length; i++) {
+        historyItems[i].querySelector('a').innerHTML = contentLanguages[language].titleHistory[i] || '';
+    }
+    for (let i = 0; i < aboutItems.length; i++) {
+        aboutItems[i].querySelector('a').innerHTML = contentLanguages[language].titleAbout[i] || '';
     }
 }
 

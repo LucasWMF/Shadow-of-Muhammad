@@ -850,3 +850,10 @@ body {
 .dropdown [aria-expanded="true"] .arrow{
     transform: rotate(180deg); /* Posição quando o dropdown está aberto */
 }
+
+.image-olimpic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
