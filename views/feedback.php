@@ -1,131 +1,80 @@
-<?php
-// Conexão com o banco de dados
-$servername = "localhost"; // ou o endereço do seu servidor
-$username = "root"; // seu usuário do banco
-$password = ""; // sua senha do banco
-$dbname = "bdShadowOfMuhammad"; // nome do seu banco de dados
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verifica a conexão
-if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
-}
-
-// Variável para controle de mensagem
-$message = "";
-
-// Lógica de envio do feedback
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = $_POST['email'] ?? '';
-    $rating = $_POST['rating'] ?? 0;
-    $mensagem = $_POST['mensagem'] ?? '';
-
-    // Verifica se os campos foram preenchidos
-    if (!empty($email) && !empty($rating) && !empty($mensagem)) {
-        // Prepara e vincula
-        $stmt = $conn->prepare("INSERT INTO feedback (email, rating, mensagem) VALUES (?, ?, ?)");
-        if ($stmt) {
-            $stmt->bind_param("sis", $email, $rating, $mensagem);
-
-            if ($stmt->execute()) {
-                $message = "Feedback enviado com sucesso!";
-            } else {
-                $message = "Erro ao enviar o feedback: " . $stmt->error;
-            }
-            $stmt->close();
-        } else {
-            $message = "Erro na preparação da declaração: " . $conn->error;
-        }
-    } else {
-        $message = "Todos os campos são obrigatórios.";
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback</title>
+    <title>Formulário de Avaliação</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        .star-rating {
+            display: flex;
+            direction: row-reverse;
+            justify-content: flex-end;
+        }
+        .star-rating input {
+            display: none;
+        }
+        .star-rating label {
+            font-size: 2rem;
+            cursor: pointer;
+            color: lightgray;
+        }
+        .star-rating input:checked ~ label {
+            color: gold;
+        }
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: gold;
+        }
+    </style>
 </head>
 <body>
-    <h2>Feedback</h2>
-    <?php if (!empty($message)): ?>
-        <p><?php echo htmlspecialchars($message); ?></p>
-    <?php endif; ?>
-    <form method="POST" action="">
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" required>
-
-        <label>Avaliação:</label>
-        <div id="stars">
-            <span class="star" data-value="1">★</span>
-            <span class="star" data-value="2">★</span>
-            <span class="star" data-value="3">★</span>
-            <span class="star" data-value="4">★</span>
-            <span class="star" data-value="5">★</span>
-        </div>
-        <input type="hidden" name="rating" id="rating" required>
-
-        <label for="mensagem">Mensagem:</label>
-        <textarea name="mensagem" id="mensagem" maxlength="500" required></textarea>
-        <p id="charCount">0/500</p>
-
-        <button type="submit">Enviar Feedback</button>
-    </form>
-
-    <h2>Feedbacks Recebidos</h2>
-
-    <?php
-    // Consulta para buscar os feedbacks
-    $sql = "SELECT email, rating, mensagem, created_at FROM feedback ORDER BY created_at DESC";
-    $result = $conn->query($sql);
-    ?>
-
-    <?php if ($result && $result->num_rows > 0): ?>
-        <ul>
-            <?php while ($row = $result->fetch_assoc()): ?>
-                <li>
-                    <strong>Avaliação:</strong> <?php echo str_repeat('★', $row['rating']); ?><br>
-                    <strong>E-mail:</strong> <?php echo htmlspecialchars($row['email']); ?><br>
-                    <strong>Mensagem:</strong> <?php echo htmlspecialchars($row['mensagem']); ?><br>
-                    <small><?php echo date('d/m/Y H:i', strtotime($row['created_at'])); ?></small>
-                </li>
-            <?php endwhile; ?>
-        </ul>
-    <?php else: ?>
-        <p>Nenhum feedback encontrado.</p>
-    <?php endif; ?>
-
-    <?php $conn->close(); ?>
+    <div class="container mt-5">
+        <h1 class="mb-4">Formulário de Avaliação</h1>
+        <form id="feedbackForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Avaliação</label>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" title="5 estrelas">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="4 estrelas">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="3 estrelas">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="2 estrelas">★</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="1 estrela">★</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="comments" class="form-label">Comentários (máximo 500 caracteres)</label>
+                <textarea class="form-control" id="comments" rows="4" maxlength="500" required></textarea>
+                <small id="charCount" class="form-text text-muted">500 caracteres restantes</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
 
     <script>
-        // Contador de caracteres
-        const mensagemInput = document.getElementById('mensagem');
+        const comments = document.getElementById('comments');
         const charCount = document.getElementById('charCount');
 
-        mensagemInput.addEventListener('input', function() {
-            const length = this.value.length;
-            charCount.textContent = length + "/500";
-        });
-
-        // Seleção de estrelas
-        const stars = document.querySelectorAll('.star');
-        stars.forEach(star => {
-            star.addEventListener('click', function() {
-                const rating = this.getAttribute('data-value');
-                document.getElementById('rating').value = rating;
-
-                stars.forEach(s => {
-                    s.classList.remove('selected');
-                });
-                for (let i = 0; i < rating; i++) {
-                    stars[i].classList.add('selected');
-                }
-            });
+        comments.addEventListener('input', () => {
+            const remainingChars = 500 - comments.value.length;
+            charCount.textContent = `${remainingChars} caracteres restantes`;
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 </body>
 </html>
