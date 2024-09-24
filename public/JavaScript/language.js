@@ -1,7 +1,7 @@
 // Dados de conteúdo para diferentes idiomas
 const contentLanguages = {
     Português: {
-        navbar: ['Home', 'Conteúdos <i class="fa-solid fa-chevron-down"></i>', 'Feedback'],
+        navbar: ['Home', 'Conteúdos <i style="margin-left:1rem;" class="fa-solid fa-chevron-down arrow"></i>', 'Feedback'],
         dropnavbar: ['História', 'Sobre', 'Olímpiadas'],
         title: ['Introdução Boxe Olímpico', 'História do Boxe e Federação', 'Modalidades e Regras', 'Melhores Competidores', 'Curiosidades e Benefícios', 'Feedback'],
         textSummary: {
@@ -63,45 +63,17 @@ const contentLanguages = {
         },
         titleOlympics: ['BOXE OLÍMPICO', 'RANKING', 'Jogos Olímpicos de Pequim 2008', 'Jogos Olímpicos de Londres 2012', 'Jogos Olímpicos de Rio 2016', 'Jogos Olímpicos de Tóquio 2020 (realizados em 2021)', 'Jogos Olímpicos de Pequim 2022 (Jogos de Inverno, o boxe não faz parte dos Jogos de Inverno)'],
         textOlympics: {
-            titulo1: [`O boxe olímpico é uma modalidade de combate que faz parte dos Jogos Olímpicos desde 1904 para homens e 2012 para mulheres. As lutas ocorrem em três rounds e os atletas utilizam luvas, capacete e protetor bucal. A vitória pode ser por nocaute, decisão dos juízes ou interrupção médica. As categorias são divididas por peso, e o foco é na técnica, rapidez e precisão dos golpes. O esporte promove fair play e possui regras rigorosas para a segurança dos lutadores.`],
-            titulo2: [`
-                <ol>
-                    <li> <b>Cuba:</b> 9 Medalhas (3 Ouro, 4 Prata, 2 Bronze)</li>
-                    <li> <b>Estados Unidos:</b> 8 medalhas (2 ouro, 2 prata, 4 bronze)</li>
-                    <li> <b>Grã-Bretanha:</b> 4 medalhas (1 ouro, 3 bronze)</li>
-                    <li> <b>Ucrânia:</b> 4 medalhas (1 ouro, 1 prata, 2 bronze)</li>
-                    <li> <b>Turquia:</b> 3 medalhas (1 ouro, 1 prata, 1 bronze)</li>
-                </ol>`],
-            titulo3: [`
-                <ol>
-                    <li> <b>Cuba:</b> 7 Medalhas (3 Ouro, 3 Prata, 1 Bronze)</li>
-                    <li> <b>Grã-Bretanha:</b> 7 medalhas (3 ouro, 1 prata, 3 bronze)</li>
-                    <li> <b>Estados Unidos:</b> 6 medalhas (2 ouro, 1 prata, 3 bronze)</li>
-                    <li> <b>Uzbequistão:</b> 5 medalhas (2 ouro, 1 prata, 2 bronze)</li>
-                    <li> <b>Azerbaijão:</b> 5 medalhas (2 ouro, 1 prata, 2 bronze)</li>
-                </ol>`],
-            titulo4: [`
-                <ol>
-                    <li> <b>Cuba:</b> 7 medalhas (4 ouro, 2 prata, 1 bronze)</li>
-                    <li> <b>Estados Unidos:</b> 6 medalhas (1 ouro, 3 prata, 2 bronze) </li>
-                    <li> <b>Grã-Bretanha:</b> 6 medalhas (2 ouro, 2 prata, 2 bronze) </li>
-                    <li> <b>Uzbequistão:</b> 4 medalhas (2 ouro, 1 prata, 1 bronze) </li>
-                    <li> <b>China:</b> 4 medalhas (1 ouro, 2 prata, 1 bronze) </li>
-                </ol>`],
-            titulo5: [`
-                <ol>
-                    <li> <b>Cuba:</b> 6 medalhas (4 ouro, 2 prata) </li>
-                    <li> <b>Estados Unidos:</b> 6 medalhas (1 ouro, 3 prata, 2 bronze) </li>
-                    <li> <b>Uzbequistão:</b> 5 medalhas (1 ouro, 3 prata, 1 bronze) </li>
-                    <li> <b>Grã-Bretanha:</b> 4 medalhas (1 ouro, 2 prata, 1 bronze) </li>
-                    <li> <b>Filipinas:</b> 2 medalhas (1 ouro, 1 prata) </li>
-                </ol>`],
-            titulo6: [`
-            Não há Jogos Olímpicos de Verão em 2022, pois a competição de boxe faz parte dos JogosOlímpicos de Verão, realizados a cada quatro anos. <br> Esses rankings refletem o desempenho dos países no boxe durante os Jogos Olímpicos de Verão de 2008 a 2020. A lista pode variar ligeiramente de acordo com a fonte e a atualização dos resultados.`],
-        }
+            titulo1: [``],
+            titulo2: [``],
+            titulo3: [``],
+        },
+        footerTitles: ['SOBRE O SITE', 'REDES SOCIAIS', 'ABAS'],
+        footerTexts: ['Nossa escola online ensina as regras e modalidades do boxe olímpico, oferecendo conhecimento e treino para iniciantes e entusiastas.'],
+        footerLinks: ['HOME', 'HISTÓRIA', 'SOBRE', 'OLÍMPIADAS', 'FEEDBACK'],
+        footerCopy: ['Copyright (c) 2024 Shadow Of Muhammad Todos os direitos reservados Este produto é protegido por direitos autorais e distribuído sob licenças que restringem cópia, distribuição e descompilação.'],
     },
     English: {
-        navbar: ['Home', 'Contents <i class="fa-solid fa-chevron-down"></i>', 'Feedback'],
+        navbar: ['Home', 'Contents <i style="margin-left:1rem;" class="fa-solid fa-chevron-down arrow"></i>', 'Feedback'],
         dropnavbar: ['History', 'About', 'Olympics'],
         title: ['Olympic Boxing Introduction', 'History of Boxing and Federation', 'Modalities and Rules', 'Best Competitors', 'Curiosities and Benefits', 'Feedback'],
         textSummary: {
@@ -189,7 +161,7 @@ const contentLanguages = {
         }
     },
     Français: {
-        navbar: ['Accueil', 'Contenus <i class="fa-solid fa-chevron-down"></i>', 'Retour'],
+        navbar: ['Accueil', 'Contenus <i style="margin-left:1rem;" class="fa-solid fa-chevron-down arrow"></i>', 'Retour'],
         dropnavbar: ['Histoire', 'Sur', 'Olympiques'],
         title: ['Introduction Boxe Olympique', 'Histoire de la boxe et de la fédération', 'Modalités et règles', 'Meilleurs compétiteurs', 'Curiosités et avantages', 'Retours'],
         textSummary: {
@@ -299,7 +271,7 @@ function contentLanguage(language) {
     }
 
     // Atualiza os links da navbar
-    const navbarLinks = document.querySelectorAll('.navbar-list .navbar-link');
+    const navbarLinks = document.querySelectorAll('a.nav-link');
 
     for (let i = 0; i < navbarLinks.length; i++) {
         if (navbarLinks[i]) {
@@ -308,7 +280,7 @@ function contentLanguage(language) {
     }
 
     // Atualiza os links do menu suspenso (dropdown)
-    const dropmenuLinks = document.querySelectorAll('.cascata-conteudo a');
+    const dropmenuLinks = document.querySelectorAll('a.dropdown-item');
     const dropmenuItems = contentLanguages[language].dropnavbar;
 
     for (let i = 0; i < dropmenuLinks.length; i++) {
@@ -325,21 +297,12 @@ function contentLanguage(language) {
         }
     });
 
-    // Footer
-    const linkPagesList = document.querySelectorAll('.item-list-pages a');
-
-    // Verifica se foram encontrados links
-    for (let i = 0; i < linkPagesList.length; i++) {
-        if (linkPagesList[i]) {
-            linkPagesList[i].innerHTML = contentLanguages[language].pageList[i] || ''; // Atualiza cada link da navbar
-        }
-    }
 
     // Atualiza os textos da seção de História
     const historyTitles = document.querySelectorAll('.section-main .section-header .h1-history');
     const historyTexts = document.querySelectorAll('.section-main .section-content .p-history');
-
     const historySections = ['all', 'all', 'federation', 'brazil'];
+
     console.log('Total aboutTitle:', historyTitles.length);
     console.log(historyTitles)
     console.log('Total aboutText:', historyTexts.length);
@@ -357,13 +320,13 @@ function contentLanguage(language) {
             // Atualiza texto dependendo da classe do elemento
             if (historyTexts[i].classList.contains('p-history-1')) {
                 historyTexts[i].innerText = contentLanguages[language].textHistory['all'][0] || ''; // Primeiro texto da seção de História
-                console.log(sectionKey)
+                // console.log(sectionKey)
             } else if (historyTexts[i].classList.contains('p-history-2')) {
                 historyTexts[i].innerText = contentLanguages[language].textHistory['all'][1] || ''; // Segundo texto da seção de História
-                console.log(sectionKey)
+                // console.log(sectionKey)
             } else {
                 historyTexts[i].innerText = contentLanguages[language].textHistory[sectionKey][0] || ''; // Atualiza texto baseado na chave da seção
-                console.log(sectionKey)
+                // console.log(sectionKey)
             }
         }
     }
@@ -388,7 +351,48 @@ function contentLanguage(language) {
         if (aboutTexts[i]) {
             // Atualiza texto dependendo da classe do elemento
             aboutTexts[i].innerHTML = contentLanguages[language].textAbout[sectionKey][0] || ''; // Atualiza texto baseado na chave da seção
-            console.log(sectionKey)
+            // console.log(sectionKey)
+        }
+    }
+
+    // Atualiza os textos do rodapé
+    const footerTitles = document.querySelectorAll('h1.title-footer');
+    const footerTexts = document.querySelectorAll('.footer-text');
+    const footerLinks = document.querySelectorAll('.list-pages a');
+    const footerCopy = document.querySelectorAll('.text-copy p');
+
+    console.log(footerTitles);
+    console.log(footerTexts);
+    console.log(footerLinks);
+    console.log(footerCopy);
+
+    const footerTitlesKeys = ['sobre', 'redes_sociais', 'abas'];
+
+    // Atualizando títulos do rodapé
+    for (let i = 0; i < footerTitles.length; i++) {
+        if (footerTitles[i] && contentLanguages[language].footerTitles[i]) {
+            footerTitles[i].innerText = contentLanguages[language].footerTitles[i] || '';
+        }
+    }
+
+    // Atualizando textos do rodapé
+    for (let i = 0; i < footerTexts.length; i++) {
+        if (footerTexts[i] && contentLanguages[language].footerTexts[i]) {
+            footerTexts[i].innerText = contentLanguages[language].footerTexts[i] || '';
+        }
+    }
+
+    // Atualizando links do rodapé
+    for (let i = 0; i < footerLinks.length; i++) {
+        if (footerLinks[i] && contentLanguages[language].footerLinks[i]) {
+            footerLinks[i].innerText = contentLanguages[language].footerLinks[i] || '';
+        }
+    }
+
+    // Atualizando cópias do rodapé
+    for (let i = 0; i < footerCopy.length; i++) {
+        if (footerCopy[i] && contentLanguages[language].footerCopy[i]) {
+            footerCopy[i].innerText = contentLanguages[language].footerCopy[i] || '';
         }
     }
 

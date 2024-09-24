@@ -267,18 +267,6 @@ body {
     /* Rotação ao focar */
 }
 
-.dropdown-toggle .arrow {
-    transition: transform 0.3s ease;
-    /* Transição suave */
-    transform: rotate(0);
-    /* Rotação inicial */
-}
-
-.dropdown-toggle:focus .arrow {
-    transform: rotate(180deg);
-    /* Rotação ao focar ou passar o mouse */
-}
-
 /* Aumentar tamanho do hambúrguer */
 .navbar-toggler {
     font-size: 2em;
@@ -708,9 +696,10 @@ body {
     }
 
     .main-header {
-        padding: 1.5rem;
+        padding: 3em;
         width: 100%;
         max-width: 100vw;
+        flex-wrap: wrap;
     }
 
     .main-img-logo {
@@ -720,6 +709,8 @@ body {
 
     .main-title {
         text-align: center;
+        gap: 2rem;
+        width: 100%;
     }
 
     .flex-position {
@@ -841,9 +832,21 @@ body {
         justify-content: center;
         flex-direction: column;
     }
+}
 
+.navbar-toggle {
+    margin-left: 10rem;
 }
 
 .list-pages {
     padding: 0;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+    transform: rotate(0deg); /* Posição inicial */
+}
+
+.dropdown [aria-expanded="true"] .arrow{
+    transform: rotate(180deg); /* Posição quando o dropdown está aberto */
 }

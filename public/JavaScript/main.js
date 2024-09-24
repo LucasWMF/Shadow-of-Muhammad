@@ -14,10 +14,10 @@ window.addEventListener("focus", () => {
     // docFaviIcon.href = docFaviIcon;
 })
 
-function toggleNavbar() {
-    const navbarList = document.querySelector('.navbar-list');
-    navbarList.classList.toggle('show');
-}
+// function toggleNavbar() {
+//     const navbarList = document.querySelector('.navbar-list');
+//     navbarList.classList.toggle('show');
+// }
 
 document.addEventListener('DOMContentLoaded', function () {
     const toggleButtons = document.getElementsByClassName('navbar-toggler');
@@ -42,7 +42,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-console.log('A')
+document.querySelectorAll('.dropdown-toggle').forEach(item => {
+    item.addEventListener('click', function() {
+        const dropdown = this.parentNode; // A <li> do dropdown
+        dropdown.classList.toggle('show'); // Alterna a classe 'show'
+    });
+});
 
 // document.addEventListener('DOMContentLoaded', () => {
 //     const languageSelect = document.getElementById('list-item-select');
