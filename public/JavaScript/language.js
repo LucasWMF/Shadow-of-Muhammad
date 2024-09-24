@@ -277,13 +277,10 @@ const contentLanguages = {
                 <li> <b>Grande-Bretagne :</b> 4 médailles (1 d'or, 2 d'argent, 1 de bronze) </li>
                 <li> <b>Philippines :</b> 2 médailles (1 d'or, 1 d'argent)</li>
             </ol>`],
-<<<<<<< Updated upstream
             titulo6 : [`
-            Il n'y aura pas de Jeux olympiques d'été en 2022, car la compétition de boxe fait partie des Jeux olympiques d'été, organisés tous les quatre ans. <br> Ces classements reflètent les performances des pays en boxe lors des Jeux olympiques d'été de 2008 à 2020. La liste peut varier légèrement en fonction de la source et du moment des résultats.`]
-=======
+            Il n'y aura pas de Jeux olympiques d'été en 2022, car la compétition de boxe fait partie des Jeux olympiques d'été, organisés tous les quatre ans. <br> Ces classements reflètent les performances des pays en boxe lors des Jeux olympiques d'été de 2008 à 2020. La liste peut varier légèrement en fonction de la source et du moment des résultats.`],
             titulo6: [`
             Il n'y aura pas de Jeux olympiques d'été en 2022, car la compétition de boxe fait partie des Jeux olympiques d'été, organisés tous les quatre ans. <br> Ces classements reflètent les performances des pays en boxe lors des Jeux olympiques d'été de 2008 à 2020. La liste peut varier légèrement en fonction de la source et du moment des résultats.`],
->>>>>>> Stashed changes
         }
     }
 };
@@ -407,8 +404,8 @@ function contentLanguage(language) {
 
     // Atualizando títulos do rodapé
     for (let i = 0; i < footerTitles.length; i++) {
-        if (footerTitles[i] && contentLanguages[language].footerTitles[i]) {
-            footerTitles[i].innerText = contentLanguages[language].footerTitles[i] || '';
+        if (footerTitles[i] && contentLanguages[language].footerTitles[0]) {
+            footerTitles[i].innerText = contentLanguages[language].footerTitles[i];
         }
     }
 
@@ -433,8 +430,7 @@ function contentLanguage(language) {
         }
     }
 
-    const olympicsTitles = document.querySelectorAll('.section-main .section-header .h1-olympics');
-    const olympicsSubTitles = document.querySelectorAll('.section-main .section-header .h2-olympics');
+    const olympicsTitles = document.querySelectorAll('.h1-olympics');
     const olympicsTexts = document.querySelectorAll('.section-main .section-content .p-olympics');
 
     const olympicsSections = ['titulo1', 'titulo2', 'titulo3', 'titulo4', 'titulo5', 'titulo6'];
