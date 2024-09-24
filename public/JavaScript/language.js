@@ -61,11 +61,43 @@ const contentLanguages = {
             titulo11: [`<b>O Maior Knockout da História:</b> O recorde de maior tempo entre um golpe e a contagem final de um knockout pertence a Jack Dempsey, que nocauteou Jess Willard no primeiro round de um combate em 1919. Dempsey foi famoso por sua potência de soco. <br><br>
             <b>Boxe no Cinema:</b> O boxe tem sido um tema popular no cinema, com filmes icônicos como "Rocky" (1976), que conta a história de um boxeador amador que tem uma chance de lutar pelo título mundial. O sucesso do filme levou a uma série de sequências e spin-offs, incluindo a série "Creed".`]
         },
-        titleOlympics: ['', '', '', '', ''],
+        titleOlympics: ['BOXE OLÍMPICO', 'RANKING', 'Jogos Olímpicos de Pequim 2008', 'Jogos Olímpicos de Londres 2012', 'Jogos Olímpicos de Rio 2016', 'Jogos Olímpicos de Tóquio 2020 (realizados em 2021)', 'Jogos Olímpicos de Pequim 2022 (Jogos de Inverno, o boxe não faz parte dos Jogos de Inverno)'],
         textOlympics: {
-            titulo1: [``],
-            titulo2: [``],
-            titulo3: [``],
+            titulo1: [`O boxe olímpico é uma modalidade de combate que faz parte dos Jogos Olímpicos desde 1904 para homens e 2012 para mulheres. As lutas ocorrem em três rounds e os atletas utilizam luvas, capacete e protetor bucal. A vitória pode ser por nocaute, decisão dos juízes ou interrupção médica. As categorias são divididas por peso, e o foco é na técnica, rapidez e precisão dos golpes. O esporte promove fair play e possui regras rigorosas para a segurança dos lutadores.`],
+            titulo2: [`
+                <ol>
+                    <li> <b>Cuba:</b> 9 Medalhas (3 Ouro, 4 Prata, 2 Bronze)</li>
+                    <li> <b>Estados Unidos:</b> 8 medalhas (2 ouro, 2 prata, 4 bronze)</li>
+                    <li> <b>Grã-Bretanha:</b> 4 medalhas (1 ouro, 3 bronze)</li>
+                    <li> <b>Ucrânia:</b> 4 medalhas (1 ouro, 1 prata, 2 bronze)</li>
+                    <li> <b>Turquia:</b> 3 medalhas (1 ouro, 1 prata, 1 bronze)</li>
+                </ol>`],
+            titulo3: [`
+                <ol>
+                    <li> <b>Cuba:</b> 7 Medalhas (3 Ouro, 3 Prata, 1 Bronze)</li>
+                    <li> <b>Grã-Bretanha:</b> 7 medalhas (3 ouro, 1 prata, 3 bronze)</li>
+                    <li> <b>Estados Unidos:</b> 6 medalhas (2 ouro, 1 prata, 3 bronze)</li>
+                    <li> <b>Uzbequistão:</b> 5 medalhas (2 ouro, 1 prata, 2 bronze)</li>
+                    <li> <b>Azerbaijão:</b> 5 medalhas (2 ouro, 1 prata, 2 bronze)</li>
+                </ol>`],
+            titulo4: [`
+                <ol>
+                    <li> <b>Cuba:</b> 7 medalhas (4 ouro, 2 prata, 1 bronze)</li>
+                    <li> <b>Estados Unidos:</b> 6 medalhas (1 ouro, 3 prata, 2 bronze) </li>
+                    <li> <b>Grã-Bretanha:</b> 6 medalhas (2 ouro, 2 prata, 2 bronze) </li>
+                    <li> <b>Uzbequistão:</b> 4 medalhas (2 ouro, 1 prata, 1 bronze) </li>
+                    <li> <b>China:</b> 4 medalhas (1 ouro, 2 prata, 1 bronze) </li>
+                </ol>`],
+            titulo5: [`
+                <ol>
+                    <li> <b>Cuba:</b> 6 medalhas (4 ouro, 2 prata) </li>
+                    <li> <b>Estados Unidos:</b> 6 medalhas (1 ouro, 3 prata, 2 bronze) </li>
+                    <li> <b>Uzbequistão:</b> 5 medalhas (1 ouro, 3 prata, 1 bronze) </li>
+                    <li> <b>Grã-Bretanha:</b> 4 medalhas (1 ouro, 2 prata, 1 bronze) </li>
+                    <li> <b>Filipinas:</b> 2 medalhas (1 ouro, 1 prata) </li>
+                </ol>`],
+            titulo6: [`
+            Não há Jogos Olímpicos de Verão em 2022, pois a competição de boxe faz parte dos JogosOlímpicos de Verão, realizados a cada quatro anos. <br> Esses rankings refletem o desempenho dos países no boxe durante os Jogos Olímpicos de Verão de 2008 a 2020. A lista pode variar ligeiramente de acordo com a fonte e a atualização dos resultados.`],
         }
     },
     English: {
@@ -117,11 +149,43 @@ const contentLanguages = {
             titulo11: [`<b>The Greatest Knockout in History:</b> The record for the longest time between a blow and the final count of a knockout is held by Jack Dempsey, who knocked out Jess Willard in the first round of a fight in 1919. Dempsey was famous for his punching power. <br><br>
             <b>Boxing in Film:</b> Boxing has long been a popular theme in cinema, with iconic films such as "Rocky" (1976), which tells the story of an amateur boxer who gets a shot at the world title. The film's success led to a number of sequels and spin-offs, including the "Creed" series.`]
         },
-        titleOlympics: ['', '', '', '', ''],
+        titleOlympics: ['OLYMPIC BOXING', 'RANKING', 'Beijing Olympics 2008', 'London Olympics 2012', 'Rio Olympics 2016', 'Tokyo Olympics 2020 (held in 2021)', 'Beijing Olympics 2022 (Winter Games, boxing is not part of the Winter Games)'],
         textOlympics: {
-            titulo1: [``],
-            titulo2: [``],
-            titulo3: [``],
+            titulo1: [`Olympic boxing is a combat sport that has been part of the Olympic Games since 1904 for men and 2012 for women. Fights take place over three rounds and athletes wear gloves, helmets and mouth guards. Victory can be by knockout, judges' decision or medical stoppage. The categories are divided by weight, and the focus is on technique, speed and precision of punches. The sport promotes fair play and has strict rules for the safety of fighters.`],
+            titulo2: [`
+            <ol>
+                <li> <b>Cuba:</b> 9 Medals (3 Gold, 4 Silver, 2 Bronze)</li>
+                <li> <b>United States:</b> 8 Medals (2 Gold, 2 Silver, 4 Bronze)</li>
+                <li> <b>Great Britain:</b> 4 Medals (1 Gold, 3 Bronze)</li>
+                <li> <b>Ukraine:</b> 4 Medals (1 Gold, 1 Silver, 2 Bronze)</li>
+                <li> <b>Turkey:</b> 3 Medals (1 Gold, 1 Silver, 1 Bronze)</li>
+            </ol>`],
+            titulo3: [`
+            <ol>
+                <li> <b>Cuba:</b> 7 Medals (3 Gold, 3 Silver, 1 Bronze)</li>
+                <li> <b>Great Britain:</b> 7 medals (3 gold, 1 silver, 3 bronze)</li>
+                <li> <b>United States:</b> 6 medals (2 gold, 1 silver, 3 bronze)</li>
+                <li> <b>Uzbekistan:</b> 5 medals (2 gold, 1 silver, 2 bronze)</li>
+                <li> <b>Azerbaijan:</b> 5 medals (2 gold, 1 silver, 2 bronze)</li>
+            </ol>`],
+            titulo4: [`
+            <ol>
+                <li> <b>Cuba:</b> 7 medals (4 gold, 2 silver, 1 bronze)</li>
+                <li> <b>United States:</b> 6 medals (1 gold, 3 silver, 2 bronze)</li>
+                <li> <b>Great Britain:</b> 6 medals (2 gold, 2 silver, 2 bronze) </li>
+                <li> <b>Uzbekistan:</b> 4 medals (2 gold, 1 silver, 1 bronze) </li>
+                <li> <b>China:</b> 4 medals (1 gold, 2 silver, 1 bronze) </li>
+            </ol>`],
+            titulo5: [`
+            <ol>
+                <li> <b>Cuba:</b> 6 medals (4 gold, 2 silver) </li>
+                <li> <b>United States:</b> 6 medals (1 gold, 3 silver, 2 bronze) </li>
+                <li> <b>Uzbekistan:</b> 5 medals (1 gold, 3 silver, 1 bronze) </li>
+                <li> <b>Great Britain:</b> 4 medals (1 gold, 2 silver, 1 bronze) </li>
+                <li> <b>Philippines:</b> 2 medals (1 gold, 1 silver)</li>
+            </ol>`],
+            titulo6: [`
+            There are no Summer Olympics in 2022, as the boxing competition is part of the Summer Olympics, held every four years. <br> These rankings reflect countries' performance in boxing during the 2008 to 2020 Summer Olympics. The list may vary slightly depending on the source and the timeliness of the results.`],
         }
     },
     Français: {
@@ -136,7 +200,7 @@ const contentLanguages = {
             'Curiosities and Benefits': ['Texte sur les curiosités et avantages en Français']
         },
         buttonMore: 'Voir Plus',
-        titleHistory: ['Histoire de la boxe', 'Fédération de la boxe', 'Boxe au Brésil'],
+        titleHistory: ['BOXE OLYMPIQUE', 'CLASSEMENT', 'Jeux Olympiques de Pékin 2008', 'Jeux Olympiques de Londres 2012', 'Jeux Olympiques de Rio 2016', 'Jeux Olympiques de Tokyo 2020 (tenus en 2021)', "Jeux Olympiques de Tokyo 2020 Pékin 2022 ( Jeux d'hiver, la boxe ne fait pas partie des Jeux d'hiver)"],
         textHistory: {
             all: ['Texte sur l\'histoire de la boxe.'],
             federation: ['Texte sur la fédération de boxe.'],
@@ -174,11 +238,43 @@ const contentLanguages = {
                 <b>La boxe au cinéma :</b> la boxe est depuis longtemps un thème populaire au cinéma, avec des films emblématiques tels que "Rocky" (1976), qui raconte l'histoire d'un boxeur amateur qui obtient une chance de remporter le titre mondial. Le succès du film a donné lieu à un certain nombre de suites et de spin-offs, notamment la série "Creed".`]
                 
         },
-        titleOlympics: ['', '', '', '', ''],
+        titleOlympics: ['BOXE OLYMPIQUE', 'CLASSEMENT', 'Jeux Olympiques de Pékin 2008', 'Jeux Olympiques de Londres 2012'],
         textOlympics: {
-            titulo1: [``],
-            titulo2: [``],
-            titulo3: [``],
+            titulo1 : [`La boxe olympique est un sport de combat qui fait partie des Jeux Olympiques depuis 1904 pour les hommes et 2012 pour les femmes. Les combats se déroulent sur trois rounds et les athlètes portent des gants, des casques et des protège-dents. La victoire peut se faire par KO, par décision des juges ou par arrêt médical. Les catégories sont divisées selon le poids et l'accent est mis sur la technique, la vitesse et la précision des coups. Le sport promeut le fair-play et impose des règles strictes pour la sécurité des combattants.`],
+            titulo2 : [`
+            <ol>
+                <li> <b>Cuba :</b> 9 médailles (3 d'or, 4 d'argent, 2 de bronze)</li>
+                <li> <b>États-Unis :</b> 8 médailles (2 d'or, 2 d'argent, 4 de bronze)</li>
+                <li> <b>Grande-Bretagne :</b> 4 médailles (1 d'or, 3 de bronze)</li>
+                <li> <b>Ukraine :</b> 4 médailles (1 d'or, 1 d'argent, 2 de bronze)</li>
+                <li> <b>Turquie :</b> 3 médailles (1 d'or, 1 d'argent, 1 de bronze)</li>
+            </ol>`],
+            titulo3 : [`
+            <ol>
+                <li> <b>Cuba :</b> 7 médailles (3 d'or, 3 d'argent, 1 de bronze)</li>
+                <li> <b>Grande-Bretagne :</b> 7 médailles (3 d'or, 1 d'argent, 3 de bronze)</li>
+                <li> <b>États-Unis :</b> 6 médailles (2 d'or, 1 d'argent, 3 de bronze)</li>
+                <li> <b>Ouzbékistan :</b> 5 médailles (2 d'or, 1 d'argent, 2 de bronze)</li>
+                <li> <b>Azerbaïdjan :</b> 5 médailles (2 d'or, 1 d'argent, 2 de bronze)</li>
+            </ol>`],
+            titulo4 : [`
+            <ol>
+                <li> <b>Cuba :</b> 7 médailles (4 d'or, 2 d'argent, 1 de bronze)</li>
+                <li> <b>États-Unis :</b> 6 médailles (1 d'or, 3 d'argent, 2 de bronze)</li>
+                <li> <b>Grande-Bretagne :</b> 6 médailles (2 d'or, 2 d'argent, 2 de bronze) </li>
+                <li> <b>Ouzbékistan :</b> 4 médailles (2 d'or, 1 d'argent, 1 de bronze) </li>
+                <li> <b>Chine :</b> 4 médailles (1 d'or, 2 d'argent, 1 de bronze) </li>
+            </ol>`],
+            titulo5 : [`
+            <ol>
+                <li> <b>Cuba :</b> 6 médailles (4 d'or, 2 d'argent) </li>
+                <li> <b>États-Unis :</b> 6 médailles (1 d'or, 3 d'argent, 2 de bronze) </li>
+                <li> <b>Ouzbékistan :</b> 5 médailles (1 d'or, 3 d'argent, 1 de bronze) </li>
+                <li> <b>Grande-Bretagne :</b> 4 médailles (1 d'or, 2 d'argent, 1 de bronze) </li>
+                <li> <b>Philippines :</b> 2 médailles (1 d'or, 1 d'argent)</li>
+            </ol>`],
+            titulo6 : [`
+            Il n'y aura pas de Jeux olympiques d'été en 2022, car la compétition de boxe fait partie des Jeux olympiques d'été, organisés tous les quatre ans. <br> Ces classements reflètent les performances des pays en boxe lors des Jeux olympiques d'été de 2008 à 2020. La liste peut varier légèrement en fonction de la source et du moment des résultats.`],
         }
     }
 };
@@ -292,6 +388,28 @@ function contentLanguage(language) {
         if (aboutTexts[i]) {
             // Atualiza texto dependendo da classe do elemento
             aboutTexts[i].innerHTML = contentLanguages[language].textAbout[sectionKey][0] || ''; // Atualiza texto baseado na chave da seção
+            console.log(sectionKey)
+        }
+    }
+
+    const olympicsTitles = document.querySelectorAll('.section-main .section-header .h1-olympics');
+    const olympicsTexts = document.querySelectorAll('.section-main .section-content .p-olympics');
+
+    const olympicsSections = ['titulo1', 'titulo2', 'titulo3', 'titulo4', 'titulo5', 'titulo6'];
+    console.log('Total olympicsTitle:', olympicsTitles.length);
+    console.log(olympicsTitles)
+    console.log('Total olympicsText:', olympicsTexts.length);
+    console.log(olympicsTexts)
+
+    for (let i = 0; i < olympicsSections.length; i++) {
+        const sectionKey = olympicsSections[i];
+
+        if (olympicsTitles[i]) {
+            olympicsTitles[i].innerHTML = contentLanguages[language].titleOlympics[i] || ''; // Atualiza título da seção de História
+        }
+
+        if (olympicsTexts[i]) {
+            olympicsTexts[i].innerHTML = contentLanguages[language].textOlympics[sectionKey][0] || ''; // Atualiza texto baseado na chave da seção
             console.log(sectionKey)
         }
     }
