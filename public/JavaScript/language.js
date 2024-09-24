@@ -190,7 +190,11 @@ const contentLanguages = {
             </ol>`],
             titulo6: [`
             There are no Summer Olympics in 2022, as the boxing competition is part of the Summer Olympics, held every four years. <br> These rankings reflect countries' performance in boxing during the 2008 to 2020 Summer Olympics. The list may vary slightly depending on the source and the timeliness of the results.`]
-        }
+        },
+        footerTitles: ['ABOUT THE SITE', 'SOCIAL NETWORKS', 'TABS'],
+        footerTexts: ['Our online school teaches the rules and modalities of Olympic boxing, offering knowledge and training for beginners and enthusiasts.'],
+        footerLinks: ['HOME', 'HISTORY', 'ABOUT', 'OLYMPICS', 'FEEDBACK'],
+        footerCopy: ['Copyright (c) 2024 Shadow Of Muhammad. All rights reserved. This product is protected by copyright and distributed under licenses that restrict copying, distribution, and decompilation.'],
     },
     Français: {
         navbar: ['Accueil', 'Contenus <i style="margin-left:1rem;" class="fa-solid fa-chevron-down arrow"></i>', 'Retour'],
@@ -281,7 +285,11 @@ const contentLanguages = {
             Il n'y aura pas de Jeux olympiques d'été en 2022, car la compétition de boxe fait partie des Jeux olympiques d'été, organisés tous les quatre ans. <br> Ces classements reflètent les performances des pays en boxe lors des Jeux olympiques d'été de 2008 à 2020. La liste peut varier légèrement en fonction de la source et du moment des résultats.`],
             titulo6: [`
             Il n'y aura pas de Jeux olympiques d'été en 2022, car la compétition de boxe fait partie des Jeux olympiques d'été, organisés tous les quatre ans. <br> Ces classements reflètent les performances des pays en boxe lors des Jeux olympiques d'été de 2008 à 2020. La liste peut varier légèrement en fonction de la source et du moment des résultats.`],
-        }
+        },
+        footerTitles: ['À PROPOS DU SITE', 'RÉSEAUX SOCIAUX', 'ONGLETS'],
+        footerTexts: ['Notre école en ligne enseigne les règles et modalités de la boxe olympique, offrant des connaissances et des entraînements pour les débutants et les passionnés.'],
+        footerLinks: ['ACCUEIL', 'HISTOIRE', 'À PROPOS', 'OLYMPIADES', 'RETROUVER'],
+        footerCopy: ['Droits d\'auteur (c) 2024 Shadow Of Muhammad. Tous les droits sont réservés. Ce produit est protégé par des droits d\'auteur et distribué sous des licences qui restreignent la copie, la distribution et la décompilation.'],
     }
 };
 
@@ -434,10 +442,10 @@ function contentLanguage(language) {
     const olympicsTexts = document.querySelectorAll('.section-main .section-content .p-olympics');
 
     const olympicsSections = ['titulo1', 'titulo2', 'titulo3', 'titulo4', 'titulo5', 'titulo6'];
-    console.log('Total olympicsTitle:', olympicsTitles.length);
-    console.log(olympicsTitles);
-    console.log('Total olympicsText:', olympicsTexts.length);
-    console.log(olympicsTexts);
+    // console.log('Total olympicsTitle:', olympicsTitles.length);
+    // console.log(olympicsTitles);
+    // console.log('Total olympicsText:', olympicsTexts.length);
+    // console.log(olympicsTexts);
 
     for (let i = 0; i < olympicsSections.length; i++) {
         const sectionKey = olympicsSections[i];
