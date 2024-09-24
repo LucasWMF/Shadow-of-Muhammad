@@ -213,13 +213,59 @@ $sqlRegistros = mysqli_query($conn, "SELECT * FROM feedback");
 
                 <div class="text-container">
                     <div class="text1">
-                        <h1 class="title-footer">Sobre nós</h1>
-                        <p>Projeto do livro de ciências sobre boxeadores.</p>
+                        <h1 class="title-footer">SOBRE O SITE</h1>
+                        <p class="footer-text">Nossa escola online ensina as regras e modalidades do boxe olímpico, oferecendo
+                            conhecimento e treino para iniciantes e entusiastas.</p>
                     </div>
                     <div class="text2">
-                        <h1 class="title-footer">Contato</h1>
-                        <p>Email: shadowofmuhammad@gmail.com</p>
+                        <h1 class="title-footer">REDES SOCIAIS</h1>
+
+                        <div class="social-container">
+                            <a href="" class="social-button">
+                                <i class="bi bi-telephone"></i>
+                            </a>
+
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shadowofmuhamamd@gmail.com"
+                                target="_blank" class="social-button">
+                                <i class="fa-light fa-at"></i>
+                            </a>
+
+                            <a href="https://www.youtube.com" target="_blank" class="social-button"
+                                alt="Acesse o Youtube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com" target="_blank" class="social-button"
+                                alt="Acesse o Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" class="social-button"
+                                alt="Acesse o Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="https://wa.me/XXXXXXXXXXXXXX?text=Olá,%20gostaria%20de%20falar%20sobre"
+                                target="_blank" class="social-button" alt="Entre em contato">
+                                <i class="fa-solid fa-map"></i>
+                            </a>
+                        </div>
                     </div>
+                    <div class="text3">
+                        <h1 class="title-footer">ABAS</h1>
+                        <ul class="list-pages">
+                            <li class="item-list-pages"><a href="index.html">HOME</a></li>
+                            <li class="item-list-pages"><a href="history.html">HISTÓRIA</a></li>
+                            <li class="item-list-pages"><a href="about.html">SOBRE</a></li>
+                            <li class="item-list-pages"><a href="olympics.html">OLÍMPIADAS</a></li>
+                            <li class="item-list-pages"><a href="feedback.php">FEEDBACK</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-copy">
+                    <p>Copyright (c) 2024 Shadow Of MuhammadTodos os direitos reservados Este produto é protegido por
+                        direitos autorais e distribuído sob licenças que restringem cópia, distribuição e descompilação.
+                    </p>
                 </div>
             </div>
         </footer>
@@ -232,7 +278,7 @@ $sqlRegistros = mysqli_query($conn, "SELECT * FROM feedback");
         stars.forEach(star => {
             star.addEventListener('click', () => {
                 const value = star.getAttribute('data-value');
-                ratingInput.value = value; // Atualiza o valor do input oculto com a avaliação
+                ratingInput.value = value;
                 updateStarSelection(value);
             });
         });
@@ -256,3 +302,9 @@ $sqlRegistros = mysqli_query($conn, "SELECT * FROM feedback");
 </body>
 
 </html>
+<script src="../public/JavaScript/main.js"></script>
+<script src="../public/JavaScript/language.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
