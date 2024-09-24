@@ -1,7 +1,14 @@
 <?php
-$dbhost = 'endereco_do_servidor_externo';
-$dbname = 'nome_do_banco';
-$dbusername = 'usuario';
-$dbpassword = 'senha';
+$servername = 'localhost';
+$username = 'root';
+$password = '';
+$dbname = 'shadow';
 
+// Cria a conexão
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verifica a conexão
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 ?>
