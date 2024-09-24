@@ -63,9 +63,41 @@ const contentLanguages = {
         },
         titleOlympics: ['BOXE OLÍMPICO', 'RANKING', 'Jogos Olímpicos de Pequim 2008', 'Jogos Olímpicos de Londres 2012', 'Jogos Olímpicos de Rio 2016', 'Jogos Olímpicos de Tóquio 2020 (realizados em 2021)', 'Jogos Olímpicos de Pequim 2022 (Jogos de Inverno, o boxe não faz parte dos Jogos de Inverno)'],
         textOlympics: {
-            titulo1: [``],
-            titulo2: [``],
-            titulo3: [``],
+            titulo1: [`O boxe olímpico é um esporte de combate que faz parte dos Jogos Olímpicos desde 1904 para os homens e 2012 para as mulheres. As lutas acontecem em três rounds e os atletas usam luvas, capacetes e protetores bucais. A vitória pode ser por nocaute, decisão dos juízes ou interrupção médica. As categorias são divididas por peso, e o foco está na técnica, velocidade e precisão dos socos. O esporte promove o jogo limpo e tem regras rígidas para a segurança dos lutadores.`],
+            titulo2: [`
+            <ol>
+                <li> <b>Cuba:</b> 9 medalhas (3 de ouro, 4 de prata, 2 de bronze)</li>
+                <li> <b>Estados Unidos:</b> 8 medalhas (2 de ouro, 2 de prata, 4 de bronze)</li>
+                <li> <b>Grã-Bretanha:</b> 4 medalhas (1 de ouro, 3 de bronze)</li>
+                <li> <b>Ucrânia:</b> 4 medalhas (1 de ouro, 1 de prata, 2 de bronze)</li>
+                <li> <b>Turquia:</b> 3 medalhas (1 de ouro, 1 de prata, 1 de bronze)</li>
+            </ol>`],
+            titulo3: [`
+            <ol>
+                <li> <b>Cuba:</b> 7 medalhas (3 de ouro, 3 de prata, 1 de bronze)</li>
+                <li> <b>Grã-Bretanha:</b> 7 medalhas (3 de ouro, 1 de prata, 3 de bronze)</li>
+                <li> <b>Estados Unidos:</b> 6 medalhas (2 de ouro, 1 de prata, 3 de bronze)</li>
+                <li> <b>Uzbequistão:</b> 5 medalhas (2 de ouro, 1 de prata, 2 de bronze)</li>
+                <li> <b>Azerbaijão:</b> 5 medalhas (2 de ouro, 1 de prata, 2 de bronze)</li>
+            </ol>`],
+            titulo4: [`
+            <ol>
+                <li> <b>Cuba:</b> 7 medalhas (4 de ouro, 2 de prata, 1 de bronze)</li>
+                <li> <b>Estados Unidos:</b> 6 medalhas (1 de ouro, 3 de prata, 2 de bronze)</li>
+                <li> <b>Grã-Bretanha:</b> 6 medalhas (2 de ouro, 2 de prata, 2 de bronze) </li>
+                <li> <b>Uzbequistão:</b> 4 medalhas (2 de ouro, 1 de prata, 1 de bronze) </li>
+                <li> <b>China:</b> 4 medalhas (1 de ouro, 2 de prata, 1 de bronze) </li>
+            </ol>`],
+            titulo5: [`
+            <ol>
+                <li> <b>Cuba:</b> 6 medalhas (4 de ouro, 2 de prata) </li>
+                <li> <b>Estados Unidos:</b> 6 medalhas (1 de ouro, 3 de prata, 2 de bronze) </li>
+                <li> <b>Uzbequistão:</b> 5 medalhas (1 de ouro, 3 de prata, 1 de bronze) </li>
+                <li> <b>Grã-Bretanha:</b> 4 medalhas (1 de ouro, 2 de prata, 1 de bronze) </li>
+                <li> <b>Filipinas:</b> 2 medalhas (1 de ouro, 1 de prata)</li>
+            </ol>`],
+            titulo6: [`
+            Não há Olimpíadas de Verão em 2022, pois a competição de boxe faz parte das Olimpíadas de Verão, realizadas a cada quatro anos. <br> Essas classificações refletem o desempenho dos países no boxe durante as Olimpíadas de Verão de 2008 a 2020. A lista pode variar um pouco dependendo da fonte e da atualidade dos resultados.`],
         },
         footerTitles: ['SOBRE O SITE', 'REDES SOCIAIS', 'ABAS'],
         footerTexts: ['Nossa escola online ensina as regras e modalidades do boxe olímpico, oferecendo conhecimento e treino para iniciantes e entusiastas.'],
@@ -157,7 +189,7 @@ const contentLanguages = {
                 <li> <b>Philippines:</b> 2 medals (1 gold, 1 silver)</li>
             </ol>`],
             titulo6: [`
-            There are no Summer Olympics in 2022, as the boxing competition is part of the Summer Olympics, held every four years. <br> These rankings reflect countries' performance in boxing during the 2008 to 2020 Summer Olympics. The list may vary slightly depending on the source and the timeliness of the results.`],
+            There are no Summer Olympics in 2022, as the boxing competition is part of the Summer Olympics, held every four years. <br> These rankings reflect countries' performance in boxing during the 2008 to 2020 Summer Olympics. The list may vary slightly depending on the source and the timeliness of the results.`]
         }
     },
     Français: {
@@ -246,7 +278,7 @@ const contentLanguages = {
                 <li> <b>Philippines :</b> 2 médailles (1 d'or, 1 d'argent)</li>
             </ol>`],
             titulo6 : [`
-            Il n'y aura pas de Jeux olympiques d'été en 2022, car la compétition de boxe fait partie des Jeux olympiques d'été, organisés tous les quatre ans. <br> Ces classements reflètent les performances des pays en boxe lors des Jeux olympiques d'été de 2008 à 2020. La liste peut varier légèrement en fonction de la source et du moment des résultats.`],
+            Il n'y aura pas de Jeux olympiques d'été en 2022, car la compétition de boxe fait partie des Jeux olympiques d'été, organisés tous les quatre ans. <br> Ces classements reflètent les performances des pays en boxe lors des Jeux olympiques d'été de 2008 à 2020. La liste peut varier légèrement en fonction de la source et du moment des résultats.`]
         }
     }
 };
